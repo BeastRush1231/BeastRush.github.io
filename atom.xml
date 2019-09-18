@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Chester Blog</title>
+  <title>Hexo</title>
   
-  
+  <subtitle>查斯特部落格 | The Blog Of Chester Tang</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chestertang.site/"/>
@@ -10,7 +10,7 @@
   <id>http://chestertang.site/</id>
   
   <author>
-    <name>Chester Tang</name>
+    <name>[object Object]</name>
     
   </author>
   
