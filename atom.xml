@@ -96,9 +96,9 @@
       <category term="Markup Language" scheme="http://chestertang.site/categories/Markup-Language/"/>
     
     
-      <category term="javascript" scheme="http://chestertang.site/tags/javascript/"/>
-    
       <category term="CoffeeScript" scheme="http://chestertang.site/tags/CoffeeScript/"/>
+    
+      <category term="javascript" scheme="http://chestertang.site/tags/javascript/"/>
     
   </entry>
   
@@ -130,13 +130,13 @@
       <category term="Markup Language" scheme="http://chestertang.site/categories/Markup-Language/"/>
     
     
-      <category term="html" scheme="http://chestertang.site/tags/html/"/>
-    
       <category term="Ruby on Rails" scheme="http://chestertang.site/tags/Ruby-on-Rails/"/>
     
-      <category term="erb" scheme="http://chestertang.site/tags/erb/"/>
+      <category term="html" scheme="http://chestertang.site/tags/html/"/>
     
       <category term="Haml" scheme="http://chestertang.site/tags/Haml/"/>
+    
+      <category term="erb" scheme="http://chestertang.site/tags/erb/"/>
     
       <category term="gem" scheme="http://chestertang.site/tags/gem/"/>
     
@@ -174,15 +174,15 @@
     
       <category term="rvm" scheme="http://chestertang.site/tags/rvm/"/>
     
+      <category term="rbenv" scheme="http://chestertang.site/tags/rbenv/"/>
+    
       <category term="zsh" scheme="http://chestertang.site/tags/zsh/"/>
+    
+      <category term="Oh-my-zsh" scheme="http://chestertang.site/tags/Oh-my-zsh/"/>
     
       <category term="iTrem2" scheme="http://chestertang.site/tags/iTrem2/"/>
     
       <category term="macOS" scheme="http://chestertang.site/tags/macOS/"/>
-    
-      <category term="Oh-my-zsh" scheme="http://chestertang.site/tags/Oh-my-zsh/"/>
-    
-      <category term="rbenv" scheme="http://chestertang.site/tags/rbenv/"/>
     
   </entry>
   
@@ -240,17 +240,17 @@
       <category term="面試分享" scheme="http://chestertang.site/categories/%E9%9D%A2%E8%A9%A6%E5%88%86%E4%BA%AB/"/>
     
     
+      <category term="2019 面試" scheme="http://chestertang.site/tags/2019-%E9%9D%A2%E8%A9%A6/"/>
+    
       <category term="Ruby on Rails" scheme="http://chestertang.site/tags/Ruby-on-Rails/"/>
     
       <category term="React" scheme="http://chestertang.site/tags/React/"/>
     
-      <category term="2019 面試" scheme="http://chestertang.site/tags/2019-%E9%9D%A2%E8%A9%A6/"/>
-    
-      <category term="Fullstack" scheme="http://chestertang.site/tags/Fullstack/"/>
-    
       <category term="Frontend" scheme="http://chestertang.site/tags/Frontend/"/>
     
       <category term="Backend" scheme="http://chestertang.site/tags/Backend/"/>
+    
+      <category term="Fullstack" scheme="http://chestertang.site/tags/Fullstack/"/>
     
   </entry>
   
