@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chestertang.site/"/>
-  <updated>2020-03-12T09:48:53.063Z</updated>
+  <updated>2020-03-13T07:11:59.686Z</updated>
   <id>http://chestertang.site/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>R 筆記 - Singleton Thread Fiber Mutex</title>
+    <link href="http://chestertang.site/2020/03/13/zyx0313/"/>
+    <id>http://chestertang.site/2020/03/13/zyx0313/</id>
+    <published>2020-03-13T07:10:40.000Z</published>
+    <updated>2020-03-13T07:11:59.686Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="R筆記-Singleton-Thread-Fiber-Mutex"><a href="#R筆記-Singleton-Thread-Fiber-Mutex" class="headerlink" title="R筆記 - Singleton Thread Fiber Mutex"></a>R筆記 - Singleton Thread Fiber Mutex</h1><h2 id="大師開講，看能吸收多少-T-T"><a href="#大師開講，看能吸收多少-T-T" class="headerlink" title="大師開講，看能吸收多少 T_T"></a>大師開講，看能吸收多少 T_T</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;R筆記-Singleton-Thread-Fiber-Mutex&quot;&gt;&lt;a href=&quot;#R筆記-Singleton-Thread-Fiber-Mutex&quot; class=&quot;headerlink&quot; title=&quot;R筆記 - Singleton Thread Fiber Mutex&quot;&gt;&lt;/a&gt;R筆記 - Singleton Thread Fiber Mutex&lt;/h1&gt;&lt;h2 id=&quot;大師開講，看能吸收多少-T-T&quot;&gt;&lt;a href=&quot;#大師開講，看能吸收多少-T-T&quot; class=&quot;headerlink&quot; title=&quot;大師開講，看能吸收多少 T_T&quot;&gt;&lt;/a&gt;大師開講，看能吸收多少 T_T&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="Ruby" scheme="http://chestertang.site/categories/Ruby/"/>
+    
+    
+      <category term="Ruby" scheme="http://chestertang.site/tags/Ruby/"/>
+    
+  </entry>
   
   <entry>
     <title>R 筆記 - respond_to? / send</title>
@@ -38,29 +61,6 @@
 &lt;p&gt;使用 respond_to 可以針對不同的格式（html 或 json）輸出不同的結果。除了用 respond_to 之外，讓我們接著看看另一種做法。&lt;/p&gt;
 &lt;p&gt;因此大致上了解了他的用法，不過跟定義有什麼關聯呢？讓我們看下去!&lt;/p&gt;
 &lt;h2 id=&quot;send&quot;&gt;&lt;a href=&quot;#send&quot; class=&quot;headerlink&quot; title=&quot;send&quot;&gt;&lt;/a&gt;send&lt;/h2&gt;
-    
-    </summary>
-    
-    
-      <category term="Ruby" scheme="http://chestertang.site/categories/Ruby/"/>
-    
-    
-      <category term="Ruby" scheme="http://chestertang.site/tags/Ruby/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>R 筆記 - Singleton Thread Fiber Mutex</title>
-    <link href="http://chestertang.site/2020/03/10/zyx0313/"/>
-    <id>http://chestertang.site/2020/03/10/zyx0313/</id>
-    <published>2020-03-10T02:20:40.000Z</published>
-    <updated>2020-03-13T07:09:01.840Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="R筆記-Singleton-Thread-Fiber-Mutex"><a href="#R筆記-Singleton-Thread-Fiber-Mutex" class="headerlink" title="R筆記 - Singleton Thread Fiber Mutex"></a>R筆記 - Singleton Thread Fiber Mutex</h1><h2 id="大師開講，看能吸收多少-T-T"><a href="#大師開講，看能吸收多少-T-T" class="headerlink" title="大師開講，看能吸收多少 T_T"></a>大師開講，看能吸收多少 T_T</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;R筆記-Singleton-Thread-Fiber-Mutex&quot;&gt;&lt;a href=&quot;#R筆記-Singleton-Thread-Fiber-Mutex&quot; class=&quot;headerlink&quot; title=&quot;R筆記 - Singleton Thread Fiber Mutex&quot;&gt;&lt;/a&gt;R筆記 - Singleton Thread Fiber Mutex&lt;/h1&gt;&lt;h2 id=&quot;大師開講，看能吸收多少-T-T&quot;&gt;&lt;a href=&quot;#大師開講，看能吸收多少-T-T&quot; class=&quot;headerlink&quot; title=&quot;大師開講，看能吸收多少 T_T&quot;&gt;&lt;/a&gt;大師開講，看能吸收多少 T_T&lt;/h2&gt;
     
     </summary>
     
