@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chestertang.site/"/>
-  <updated>2020-03-14T05:04:40.345Z</updated>
+  <updated>2020-03-15T12:26:30.371Z</updated>
   <id>http://chestertang.site/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="http://chestertang.site/2020/03/13/zyx0313/"/>
     <id>http://chestertang.site/2020/03/13/zyx0313/</id>
     <published>2020-03-13T07:10:40.000Z</published>
-    <updated>2020-03-14T05:04:40.345Z</updated>
+    <updated>2020-03-15T12:26:30.371Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="R筆記-Singleton-Thread-Fiber-Mutex"><a href="#R筆記-Singleton-Thread-Fiber-Mutex" class="headerlink" title="R筆記 - Singleton Thread Fiber Mutex"></a>R筆記 - Singleton Thread Fiber Mutex</h1><h2 id="大師開講，看能吸收多少-T-T"><a href="#大師開講，看能吸收多少-T-T" class="headerlink" title="大師開講，看能吸收多少 T_T"></a>大師開講，看能吸收多少 T_T</h2><ul><li><p><a href="https://ruby-doc.org/stdlib-2.5.1/libdoc/singleton/rdoc/Singleton.html" target="_blank" rel="noopener">https://ruby-doc.org/stdlib-2.5.1/libdoc/singleton/rdoc/Singleton.html</a></p></li><li><p><a href="https://ruby-doc.org/core-2.5.0/Thread.html" target="_blank" rel="noopener">https://ruby-doc.org/core-2.5.0/Thread.html</a></p></li><li><p><a href="https://ruby-doc.org/core-2.5.0/Fiber.html" target="_blank" rel="noopener">https://ruby-doc.org/core-2.5.0/Fiber.html</a></p></li><li><p><a href="https://ruby-doc.org/core-2.5.0/Mutex.html" target="_blank" rel="noopener">https://ruby-doc.org/core-2.5.0/Mutex.html</a></p></li><li><p><a href="https://en.wikipedia.org/wiki/Global_interpreter_lock" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Global_interpreter_lock</a></p></li><li><p><a href="https://blog.frost.tw/posts/2018/06/26/Talk-about-ruby-s-fiber-Part-1/" target="_blank" rel="noopener">https://blog.frost.tw/posts/2018/06/26/Talk-about-ruby-s-fiber-Part-1/</a></p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="R筆記-Singleton-Thread-Fiber-Mutex"><a href="#R筆記-Singleton-Thread-Fiber-Mutex" class="headerlink" title="R筆記 - Singleton Thread Fiber Mutex"></a>R筆記 - Singleton Thread Fiber Mutex</h1><h2 id="大師開講，看能吸收多少"><a href="#大師開講，看能吸收多少" class="headerlink" title="大師開講，看能吸收多少"></a>大師開講，看能吸收多少</h2><ul><li><p><a href="https://ruby-doc.org/stdlib-2.5.1/libdoc/singleton/rdoc/Singleton.html" target="_blank" rel="noopener">https://ruby-doc.org/stdlib-2.5.1/libdoc/singleton/rdoc/Singleton.html</a></p></li><li><p><a href="https://ruby-doc.org/core-2.5.0/Thread.html" target="_blank" rel="noopener">https://ruby-doc.org/core-2.5.0/Thread.html</a></p></li><li><p><a href="https://ruby-doc.org/core-2.5.0/Fiber.html" target="_blank" rel="noopener">https://ruby-doc.org/core-2.5.0/Fiber.html</a></p></li><li><p><a href="https://ruby-doc.org/core-2.5.0/Mutex.html" target="_blank" rel="noopener">https://ruby-doc.org/core-2.5.0/Mutex.html</a></p></li><li><p><a href="https://en.wikipedia.org/wiki/Global_interpreter_lock" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Global_interpreter_lock</a></p></li><li><p><a href="https://blog.frost.tw/posts/2018/06/26/Talk-about-ruby-s-fiber-Part-1/" target="_blank" rel="noopener">https://blog.frost.tw/posts/2018/06/26/Talk-about-ruby-s-fiber-Part-1/</a></p></li></ul>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;R筆記-Singleton-Thread-Fiber-Mutex&quot;&gt;&lt;a href=&quot;#R筆記-Singleton-Thread-Fiber-Mutex&quot; class=&quot;headerlink&quot; title=&quot;R筆記 - Singleton Thread Fiber Mutex&quot;&gt;&lt;/a&gt;R筆記 - Singleton Thread Fiber Mutex&lt;/h1&gt;&lt;h2 id=&quot;大師開講，看能吸收多少-T-T&quot;&gt;&lt;a href=&quot;#大師開講，看能吸收多少-T-T&quot; class=&quot;headerlink&quot; title=&quot;大師開講，看能吸收多少 T_T&quot;&gt;&lt;/a&gt;大師開講，看能吸收多少 T_T&lt;/h2&gt;&lt;ul&gt;
+      &lt;h1 id=&quot;R筆記-Singleton-Thread-Fiber-Mutex&quot;&gt;&lt;a href=&quot;#R筆記-Singleton-Thread-Fiber-Mutex&quot; class=&quot;headerlink&quot; title=&quot;R筆記 - Singleton Thread Fiber Mutex&quot;&gt;&lt;/a&gt;R筆記 - Singleton Thread Fiber Mutex&lt;/h1&gt;&lt;h2 id=&quot;大師開講，看能吸收多少&quot;&gt;&lt;a href=&quot;#大師開講，看能吸收多少&quot; class=&quot;headerlink&quot; title=&quot;大師開講，看能吸收多少&quot;&gt;&lt;/a&gt;大師開講，看能吸收多少&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://ruby-doc.org/stdlib-2.5.1/libdoc/singleton/rdoc/Singleton.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://ruby-doc.org/stdlib-2.5.1/libdoc/singleton/rdoc/Singleton.html&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://ruby-doc.org/core-2.5.0/Thread.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://ruby-doc.org/core-2.5.0/Thread.html&lt;/a&gt;&lt;/p&gt;
