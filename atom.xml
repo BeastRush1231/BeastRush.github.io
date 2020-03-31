@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chestertang.site/"/>
-  <updated>2020-03-31T07:02:48.043Z</updated>
+  <updated>2020-03-31T07:05:04.712Z</updated>
   <id>http://chestertang.site/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>AWS - S3 Cross Region Replication</title>
+    <title>S3 Cross Region Replication</title>
     <link href="http://chestertang.site/2020/03/31/zyx0331/"/>
     <id>http://chestertang.site/2020/03/31/zyx0331/</id>
     <published>2020-03-31T07:00:00.000Z</published>
-    <updated>2020-03-31T07:02:48.043Z</updated>
+    <updated>2020-03-31T07:05:04.712Z</updated>
     
     <content type="html"><![CDATA[<h1 id="S3-Cross-Region-Replication-LAB"><a href="#S3-Cross-Region-Replication-LAB" class="headerlink" title="S3 Cross Region Replication - LAB"></a>S3 Cross Region Replication - LAB</h1><h2 id="S3-Cross-Region-Replication"><a href="#S3-Cross-Region-Replication" class="headerlink" title="S3 Cross Region Replication"></a>S3 Cross Region Replication</h2><p>這篇將介紹如果要複製一個 S3 bucket ，不只複製現在部分，而且在被複製的 bucket 上如果 <code>Upload</code> 新的檔案，複製的 bucket 也有一樣的效果該如何實作？還有一些預設該知道的觀念。</p><p>以下將用 <a href="https://chestertang.site/2020/03/27/zyx0327/">Versioning</a> 建立的 S3 Bucket 繼續實作這篇的，如果裡面的概念忘記或者不熟可以先回去看看</p><p>首先，先點選我們當初建立的 <code>chestertang1231-versiontest</code> 的 bucket</p><p>![IMAGE](quiver-image-url/83F9E19D79E74EEB23E9600CB9CB360C.jpg =1375x756)</p><p>點選 <code>Management</code> 按鈕後，可以看到 <code>Replication</code> 中有 <code>Add rule</code> 建立複寫的規則，這邊還沒有建立過，所以就來直接建一個吧！</p><p>![IMAGE](quiver-image-url/0D64CEA8BF749211473C10FEB7BFB259.jpg =1326x760)</p><p>Replication rule 的 Set source 的部分中，我們直接將整個 bucket 都選取</p><p>![IMAGE](quiver-image-url/6DDB20E15E4FA0D64B803BCCF4D0B4E1.jpg =1325x758)</p><p>建立一個新的 bucket</p><p>![IMAGE](quiver-image-url/871405F35520B715953B9E6113F62A19.jpg =1323x755)</p><p>取一個 S3 bucket 的名字，可以有個開頭方便好知道這個是現在這個 bucket 的副本</p><p>![IMAGE](quiver-image-url/23446165F92F9D540DCC6955D2C72394.jpg =1334x760)</p><p>最後只要再給這個 <code>Rule name</code> 取一個名字，就完成啦！</p><p>![IMAGE](quiver-image-url/66371202AB0E4E26BF0AA765222447C3.jpg =1324x755)</p><p>可以看到完成後，這個 <code>Bucket</code> 裡面可以知道你剛剛建立的複製的 <code>Bucket</code>，明細大致上就是跟上面再建立 <code>Replication rule</code> 的明細是相同的</p><p>![IMAGE](quiver-image-url/F1EFC7833D5C69BA857980492CC2575B.jpg =1330x760)</p><p>此外，在 S3 裡面也會多出一個新的 bucket 出來，不只如此，可以試試看在原本被複製的 bucket <code>chestertang1231-versiontest</code> 中 <code>Upload</code> 檔案可以看看複製出來的 <code>chesterdercrossregionreplication</code> 的 bucket 會有什麼變化？</p><p>![IMAGE](quiver-image-url/9F5D85CC971895DA569355202D081E4B.jpg =1375x756)</p><blockquote><ol><li>新建立出來的 <code>chesterdercrossregionreplication</code> bucket 是空的，就算被複製的 bucket 有 file 也不會複寫過來 </li><li>在被複製的 bucket 中刪除 Object、Version 都不會覆寫到複製的 <code>chesterdercrossregionreplication</code> bucket</li></ol></blockquote><h1 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h1><ul><li>Versioning must be enabled on both the source and destination buckets</li><li>Files in an existing bucket are not replication automatically</li><li>All subsequent updated files will be replication automatically</li><li>Delete markers are not replicated</li><li>Deleting individual versions or delete markers will noe be replicated</li><li>Understand what Cross Region Replication is at a high level</li></ul><blockquote><p><a href="https://docs.aws.amazon.com/zh_tw/AmazonS3/latest/user-guide/enable-replication.html" target="_blank" rel="noopener">https://docs.aws.amazon.com/zh_tw/AmazonS3/latest/user-guide/enable-replication.html</a></p></blockquote>]]></content>
     
