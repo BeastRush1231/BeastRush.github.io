@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chestertang.site/"/>
-  <updated>2020-04-04T10:37:26.709Z</updated>
+  <updated>2020-04-04T15:49:51.507Z</updated>
   <id>http://chestertang.site/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>S3 CloudFront Distribution</title>
+    <link href="http://chestertang.site/2020/04/05/zyx0405/"/>
+    <id>http://chestertang.site/2020/04/05/zyx0405/</id>
+    <published>2020-04-04T16:00:00.000Z</published>
+    <updated>2020-04-04T15:49:51.507Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Create-A-CloudFront-Distribution"><a href="#Create-A-CloudFront-Distribution" class="headerlink" title="Create A CloudFront Distribution"></a>Create A CloudFront Distribution</h1><h2 id="Networking-amp-Content-Delivery-CloudFront"><a href="#Networking-amp-Content-Delivery-CloudFront" class="headerlink" title="Networking &amp; Content Delivery / CloudFront"></a>Networking &amp; Content Delivery / CloudFront</h2><p>Amazon CloudFront 是快速內容交付網路 (CDN) 服務，可在支援開發人員的環境中，以低延遲和高速傳輸的方式將資料、影片、應用程式和 API 安全地交付給全球的客戶。</p><p>CloudFront 可與多種服務流暢搭配，包含使用 AWS Shield 減少 DDoS 攻擊次數、以 Amazon S3、Elastic Load Balancing 或 Amazon EC2 做為應用程式的來源，以及使用 Lambda@Edge 在更靠近客戶使用者的位置執行自訂程式碼，並自訂使用者體驗。</p><h3 id="Create-a-CloudFront-Distribution"><a href="#Create-a-CloudFront-Distribution" class="headerlink" title="Create a CloudFront Distribution"></a>Create a CloudFront Distribution</h3><p>點選 <code>Networking &amp; Content Delivery / CloudFront</code> 按鈕，可以看到 <code>CloudFront Distributions</code> 頁面，直接點選 <code>Create Distribution</code> 以建立 <code>CloudFront</code> </p><p><img src="https://i.imgur.com/hl0hNdj.png" alt="image"><br><img src="https://i.imgur.com/Dv7iVV4.png" alt="image"></p><p>總共有兩個步驟：</p><ol><li>Select delivery method</li><li>Create Distribution</li></ol><p>首先，可以選擇 <code>Web</code> 和 <code>RTMP</code> 兩種方式， <code>RTMP</code> 主要是拿來給 Media 類型來使用的 (e.g. Adobe)，這邊就直接以 <code>Web / Get Started</code> 來實作範例</p><p><img src="https://i.imgur.com/D8Dx1PN.png" alt="image"></p><p>還記得我們當初在 <a href="https://chestertang.site/2020/03/31/zyx0331/">S3 Cross Region Replication</a> 建立的 S3 Bucket 吧？這時候就可以選擇這個 Bucket 來測試看看</p><p>將 <code>Origin Domain Name</code> 選取要被 <code>Distribution</code> 的 Bucket，其餘選項將以預設來 <code>Create Distribution</code></p><p><img src="https://i.imgur.com/VEOJTM0.png" alt="image"></p><p>完成後大約要等待 15-30 分鐘左右，當 <code>Status</code> 變成 <code>Deployed</code> 就代表完成並且 <code>Enabled</code></p><p><img src="https://i.imgur.com/AuNEVQH.png" alt="image"></p><p>而也會取得一個 <code>Domain name</code> 即其他資訊，可以試著打開這個連結，會發現裡面的內容跟當初建立 S3 Bucket 是相同的，只是現在被 <code>Distribution</code> 到 <code>Edge Location</code> </p><blockquote><p>Domain Name：d2qxnxw978i04y.cloudfront.net</p></blockquote><p><img src="https://i.imgur.com/gyl5cD6.png" alt="image"></p><p>最後，如果在 Origin 的 Bucket 有 Upload 許多檔案的話，現在不用再輸入當初給的 S3 Bucket 連結來取得圖片，我們可以透過剛剛給的 <code>Domain Name</code> 並加上檔案名稱（如同 <a href="https://chestertang.site/2020/03/26/zyx0326/">S3 Bucket</a> ㄧ樣）就可以直接圖取到檔案啦！</p><p><img src="https://i.imgur.com/IT5N0K6.png" alt="image"></p><blockquote><p><a href="http://d2qxnxw978i04y.cloudfront.net/icon.png" target="_blank" rel="noopener">http://d2qxnxw978i04y.cloudfront.net/icon.png</a></p></blockquote><h1 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h1><ul><li>Edge Location：This is the location where content will be cached. This is separate to an AWS Region/AZ.</li><li>Origin：This is the origin of  all the files that the CDN will distribute. This can be either an S3 Bucket, an EC2 Instance, an Elastic Load Balancer, or Route 53.</li><li>Distribution：This is the same given the CDN which consists of collection of Edge Locations.</li><li>Web Distribution：Typically used for Websites.</li><li>RTMP：Used for Media Streaming.</li><li>Edge locations are not just READ only - you can write to them too. (ie put an object on to them)</li><li>Objects are cached for the life of the Time To Live.</li><li>You can clear cached objects, but you will be charged.</li></ul><blockquote><p><a href="https://docs.aws.amazon.com/zh_tw/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.SimpleDistribution.html" target="_blank" rel="noopener">Getting Started with a Simple CloudFront Distribution</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Create-A-CloudFront-Distribution&quot;&gt;&lt;a href=&quot;#Create-A-CloudFront-Distribution&quot; class=&quot;headerlink&quot; title=&quot;Create A CloudFront Distribution&quot;&gt;&lt;/a&gt;Create A CloudFront Distribution&lt;/h1&gt;&lt;h2 id=&quot;Networking-amp-Content-Delivery-CloudFront&quot;&gt;&lt;a href=&quot;#Networking-amp-Content-Delivery-CloudFront&quot; class=&quot;headerlink&quot; title=&quot;Networking &amp;amp; Content Delivery / CloudFront&quot;&gt;&lt;/a&gt;Networking &amp;amp; Content Delivery / CloudFront&lt;/h2&gt;&lt;p&gt;Amazon CloudFront 是快速內容交付網路 (CDN) 服務，可在支援開發人員的環境中，以低延遲和高速傳輸的方式將資料、影片、應用程式和 API 安全地交付給全球的客戶。&lt;/p&gt;
+&lt;p&gt;CloudFront 可與多種服務流暢搭配，包含使用 AWS Shield 減少 DDoS 攻擊次數、以 Amazon S3、Elastic Load Balancing 或 Amazon EC2 做為應用程式的來源，以及使用 Lambda@Edge 在更靠近客戶使用者的位置執行自訂程式碼，並自訂使用者體驗。&lt;/p&gt;
+&lt;h3 id=&quot;Create-a-CloudFront-Distribution&quot;&gt;&lt;a href=&quot;#Create-a-CloudFront-Distribution&quot; class=&quot;headerlink&quot; title=&quot;Create a CloudFront Distribution&quot;&gt;&lt;/a&gt;Create a CloudFront Distribution&lt;/h3&gt;&lt;p&gt;點選 &lt;code&gt;Networking &amp;amp; Content Delivery / CloudFront&lt;/code&gt; 按鈕，可以看到 &lt;code&gt;CloudFront Distributions&lt;/code&gt; 頁面，直接點選 &lt;code&gt;Create Distribution&lt;/code&gt; 以建立 &lt;code&gt;CloudFront&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/hl0hNdj.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://i.imgur.com/Dv7iVV4.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;總共有兩個步驟：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select delivery method&lt;/li&gt;
+&lt;li&gt;Create Distribution&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;首先，可以選擇 &lt;code&gt;Web&lt;/code&gt; 和 &lt;code&gt;RTMP&lt;/code&gt; 兩種方式， &lt;code&gt;RTMP&lt;/code&gt; 主要是拿來給 Media 類型來使用的 (e.g. Adobe)，這邊就直接以 &lt;code&gt;Web / Get Started&lt;/code&gt; 來實作範例&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Amazon Web Services" scheme="http://chestertang.site/categories/Amazon-Web-Services/"/>
+    
+    
+      <category term="AWS" scheme="http://chestertang.site/tags/AWS/"/>
+    
+      <category term="CloudFront Distribution" scheme="http://chestertang.site/tags/CloudFront-Distribution/"/>
+    
+  </entry>
   
   <entry>
     <title>S3 Cross Region Replication</title>
@@ -720,55 +754,6 @@
       <category term="Docker" scheme="http://chestertang.site/tags/Docker/"/>
     
       <category term="note" scheme="http://chestertang.site/tags/note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AWS - Cloud Services Overview</title>
-    <link href="http://chestertang.site/2020/01/13/zyx0113/"/>
-    <id>http://chestertang.site/2020/01/13/zyx0113/</id>
-    <published>2020-01-13T10:47:40.000Z</published>
-    <updated>2020-01-21T14:23:14.299Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="雲端運算-Cloud-Services-Overview"><a href="#雲端運算-Cloud-Services-Overview" class="headerlink" title="雲端運算 Cloud Services Overview"></a>雲端運算 Cloud Services Overview</h1><p>雲端運算，是一種基於網際網路的資源使用方式，通過這種方式，共享的軟硬體資源和資訊可以按需求提供給電腦各種終端和其他裝置。簡單來說，從應用環境、資料、執行環境、中介程式、作業系統、伺服器、儲存硬體、網路到機房，可以依據從服務商提供的不同服務模式來使用。</p><h2 id="服務模式"><a href="#服務模式" class="headerlink" title="服務模式"></a>服務模式</h2><p>美國國家標準和技術研究院的雲端運算定義中明確了三種服務模式：</p><p><img src="https://i.imgur.com/mpWDLoP.png" alt="image"></p><ul><li><p>基礎架構即服務 Infrastructure as a Service（IaaS）</p><p>消費者使用「基礎運算資源」，如處理能力、儲存空間。消費者能掌控作業系統、儲存空間、已部署的應用程式及網路元件（如防火牆），但並不掌控雲端基礎架構。例如：Amazon AWS。</p><p>跟過去的傳統架設機房來相比，我們可以解釋成和服務商租賃雲端機房、伺服器、網路環境等等，而不用像過去需要在公司內部自行建置機房。</p></li></ul><ul><li><p>平台即服務 Platform as a Service（PaaS）</p><p>除 IaaS 的項目之外，消費者掌控運作應用程式的環境（也擁有主機部分掌控權），但並不掌控作業系統、硬體或運作的網路基礎架構。平台通常是應用程式基礎架構。就像 Microsoft Azure 所提供的 PaaS 服務，像 IaaS 一樣提供包括基礎架構服務器，存儲和網路，而且還包括開發環境、開發工具，商業智能服務，數據庫管理系統等。</p></li></ul><ul><li><p>軟體即服務 Software as a Service（SaaS）</p><p>消費者使用應用程式，但並不掌控作業系統、硬體或運作的網路基礎架構。是一種服務觀念的基礎，軟體服務供應商，以租賃的概念提供客戶服務，而非購買，比較常見的模式是提供一組帳號密碼。</p><p>舉 Google 為例，它提供免費的電子郵件、日曆等服務給大眾使用外，還針對企業推出服務層級協定較高的付費網路郵件服務，企業不需要另外採購應用電子郵件的軟體和硬體設備，只要訂購 Google 的 Gmail 服務，就能取代自建的電子郵件系統。</p></li></ul><h1 id="亞馬遜雲端運算服務-Amazon-Web-Services-Overview"><a href="#亞馬遜雲端運算服務-Amazon-Web-Services-Overview" class="headerlink" title="亞馬遜雲端運算服務 Amazon Web Services Overview"></a>亞馬遜雲端運算服務 Amazon Web Services Overview</h1><p>亞馬遜雲端運算服務（Amazon Web Services），由亞馬遜公司所建立的雲端運算平台，提供許多遠端 Web 服務。Amazon EC2 與 Amazon S3 都架構在這個平台上。在2002年7月首次公開運作，提供其他網站及客戶端的服務。</p><p>AWS 雲端產品服務：</p><p><img src="https://i.imgur.com/3rGHyJp.png" alt="image"></p><h1 id="AWS-免費試用帳戶"><a href="#AWS-免費試用帳戶" class="headerlink" title="AWS 免費試用帳戶"></a>AWS 免費試用帳戶</h1><p>AWS 有提供 12 個月免費試用帳號，每個月有限定的免費金額可以使用，大部分服務在到期後是不會直接中止的，但注意時間超過會被持續收費。</p><p>完整的使用限制與每月換算可使用額度，可以參考 <a href="https://aws.amazon.com/tw/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc#legal" target="_blank" rel="noopener">AWS Free Tier (Non-expiring Offers)</a></p><h1 id="AWS-價格計算"><a href="#AWS-價格計算" class="headerlink" title="AWS 價格計算"></a>AWS 價格計算</h1><p>用多少算多少的概念，取決於使用的時間、單位、占用的資源與方式，如果整個服務都是在雲端內部自己存取的跟需要用到外部網路讓雲端資源可以給目前單位的本機電腦使用就會有不同的費用計算方式。</p><p>官方提供租用價格計算方式：</p><ul><li><p>每月成本簡易計算器（<a href="https://calculator.s3.amazonaws.com/index.html" target="_blank" rel="noopener">AWS Simple Monthly Calculator</a>）</p></li><li><p>TCO 計算器（<a href="https://aws.amazon.com/tw/tco-calculator/" target="_blank" rel="noopener">AWS TCO calculator</a>）</p></li></ul><blockquote><p>雲端比較：<a href="https://www.flexera.com/blog/cloud/2016/11/aws-vs-azure-vs-google-cloud-pricing-compute-instances/" target="_blank" rel="noopener">AWS vs Azure vs Google Cloud Pricing: Compute Instances</a></p></blockquote><p>結論：以前大學學的雲端運算都忘了，默默再重新把把這些名詞通通記回來，改天來開通一下 AWS 的試用帳戶吧 owo！</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;雲端運算-Cloud-Services-Overview&quot;&gt;&lt;a href=&quot;#雲端運算-Cloud-Services-Overview&quot; class=&quot;headerlink&quot; title=&quot;雲端運算 Cloud Services Overview&quot;&gt;&lt;/a&gt;雲端運算 Cloud Services Overview&lt;/h1&gt;&lt;p&gt;雲端運算，是一種基於網際網路的資源使用方式，通過這種方式，共享的軟硬體資源和資訊可以按需求提供給電腦各種終端和其他裝置。簡單來說，從應用環境、資料、執行環境、中介程式、作業系統、伺服器、儲存硬體、網路到機房，可以依據從服務商提供的不同服務模式來使用。&lt;/p&gt;
-&lt;h2 id=&quot;服務模式&quot;&gt;&lt;a href=&quot;#服務模式&quot; class=&quot;headerlink&quot; title=&quot;服務模式&quot;&gt;&lt;/a&gt;服務模式&lt;/h2&gt;&lt;p&gt;美國國家標準和技術研究院的雲端運算定義中明確了三種服務模式：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/mpWDLoP.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;基礎架構即服務 Infrastructure as a Service（IaaS）&lt;/p&gt;
-&lt;p&gt;消費者使用「基礎運算資源」，如處理能力、儲存空間。消費者能掌控作業系統、儲存空間、已部署的應用程式及網路元件（如防火牆），但並不掌控雲端基礎架構。例如：Amazon AWS。&lt;/p&gt;
-&lt;p&gt;跟過去的傳統架設機房來相比，我們可以解釋成和服務商租賃雲端機房、伺服器、網路環境等等，而不用像過去需要在公司內部自行建置機房。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;平台即服務 Platform as a Service（PaaS）&lt;/p&gt;
-&lt;p&gt;除 IaaS 的項目之外，消費者掌控運作應用程式的環境（也擁有主機部分掌控權），但並不掌控作業系統、硬體或運作的網路基礎架構。平台通常是應用程式基礎架構。就像 Microsoft Azure 所提供的 PaaS 服務，像 IaaS 一樣提供包括基礎架構服務器，存儲和網路，而且還包括開發環境、開發工具，商業智能服務，數據庫管理系統等。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;軟體即服務 Software as a Service（SaaS）&lt;/p&gt;
-&lt;p&gt;消費者使用應用程式，但並不掌控作業系統、硬體或運作的網路基礎架構。是一種服務觀念的基礎，軟體服務供應商，以租賃的概念提供客戶服務，而非購買，比較常見的模式是提供一組帳號密碼。&lt;/p&gt;
-&lt;p&gt;舉 Google 為例，它提供免費的電子郵件、日曆等服務給大眾使用外，還針對企業推出服務層級協定較高的付費網路郵件服務，企業不需要另外採購應用電子郵件的軟體和硬體設備，只要訂購 Google 的 Gmail 服務，就能取代自建的電子郵件系統。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;亞馬遜雲端運算服務-Amazon-Web-Services-Overview&quot;&gt;&lt;a href=&quot;#亞馬遜雲端運算服務-Amazon-Web-Services-Overview&quot; class=&quot;headerlink&quot; title=&quot;亞馬遜雲端運算服務 Amazon Web Services Overview&quot;&gt;&lt;/a&gt;亞馬遜雲端運算服務 Amazon Web Services Overview&lt;/h1&gt;&lt;p&gt;亞馬遜雲端運算服務（Amazon Web Services），由亞馬遜公司所建立的雲端運算平台，提供許多遠端 Web 服務。Amazon EC2 與 Amazon S3 都架構在這個平台上。在2002年7月首次公開運作，提供其他網站及客戶端的服務。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Amazon Web Services" scheme="http://chestertang.site/categories/Amazon-Web-Services/"/>
-    
-    
-      <category term="AWS" scheme="http://chestertang.site/tags/AWS/"/>
-    
-      <category term="Saas" scheme="http://chestertang.site/tags/Saas/"/>
-    
-      <category term="Iaas" scheme="http://chestertang.site/tags/Iaas/"/>
-    
-      <category term="Paas" scheme="http://chestertang.site/tags/Paas/"/>
     
   </entry>
   
