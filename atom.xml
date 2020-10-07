@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chestertang.site/"/>
-  <updated>2020-10-06T01:26:57.380Z</updated>
+  <updated>2020-10-07T01:29:44.443Z</updated>
   <id>http://chestertang.site/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>22 - Permutations</title>
+    <link href="http://chestertang.site/2020/10/07/codewars22/"/>
+    <id>http://chestertang.site/2020/10/07/codewars22/</id>
+    <published>2020-10-07T01:00:00.000Z</published>
+    <updated>2020-10-07T01:29:44.443Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="22-Permutations"><a href="#22-Permutations" class="headerlink" title="22 - Permutations"></a>22 - Permutations</h1><p>Don’t say so much, just coding…</p><h2 id="Instruction"><a href="#Instruction" class="headerlink" title="Instruction"></a>Instruction</h2><p>In this kata you have to create all permutations of an input string and remove duplicates, if present. This means, you have to shuffle all letters from the input in all possible orders.</p><p>Examples:</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">permutations('a'); # ['a']</span><br><span class="line">permutations('ab'); # ['ab', 'ba']</span><br><span class="line">permutations('aabb'); # ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']</span><br></pre></td></tr></table></figure><p>The order of the permutations doesn’t matter.</p><h3 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h3><h4 id="Init"><a href="#Init" class="headerlink" title="Init"></a>Init</h4><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">permutations</span><span class="params">(string)</span></span></span><br><span class="line">  <span class="comment">#your code here</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure><h4 id="Sample-Testing"><a href="#Sample-Testing" class="headerlink" title="Sample Testing"></a>Sample Testing</h4><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Test.assert_equals(permutations('a').sort, ['a']);</span></span><br><span class="line">Test.assert_equals(permutations(<span class="string">'ab'</span>).sort, [<span class="string">'ab'</span>, <span class="string">'ba'</span>])</span><br><span class="line">Test.assert_equals(permutations(<span class="string">'aabb'</span>).sort, [<span class="string">'aabb'</span>, <span class="string">'abab'</span>, <span class="string">'abba'</span>, <span class="string">'baab'</span>, <span class="string">'baba'</span>, <span class="string">'bbaa'</span>])</span><br></pre></td></tr></table></figure><h3 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h3><h4 id="Init-1"><a href="#Init-1" class="headerlink" title="Init"></a>Init</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">permutations</span>(<span class="params">string</span>) </span>&#123;</span><br><span class="line">  <span class="comment">//your code here</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="Sample-Testing-1"><a href="#Sample-Testing-1" class="headerlink" title="Sample Testing"></a>Sample Testing</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">describe(<span class="string">'permutations'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  it(<span class="string">'examples from description'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    Test.assertSimilar(permutations(<span class="string">'a'</span>), [<span class="string">'a'</span>]);</span><br><span class="line">    Test.assertSimilar(permutations(<span class="string">'ab'</span>).sort(), [<span class="string">'ab'</span>, <span class="string">'ba'</span>].sort());</span><br><span class="line">    Test.assertSimilar(permutations(<span class="string">'aabb'</span>).sort(), [<span class="string">'aabb'</span>, <span class="string">'abab'</span>, <span class="string">'abba'</span>, <span class="string">'baab'</span>, <span class="string">'baba'</span>, <span class="string">'bbaa'</span>].sort());</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><hr><h1 id="Thinking"><a href="#Thinking" class="headerlink" title="Thinking"></a>Thinking</h1><p>想法(1): 字組的所有排列組合，發現 ruby 連這種東西都有，寫起來就是簡潔又快速，真的方便 ·＿＿·</p><p><img src="https://ithelp.ithome.com.tw/upload/images/20201007/20120826ivLm6ehvW5.jpg" alt="https://ithelp.ithome.com.tw/upload/images/20201007/20120826ivLm6ehvW5.jpg"><br>圖片來源：<a href="https://unsplash.com/photos/8pb7Hq539Zw" target="_blank" rel="noopener">Unsplash XPS</a></p><h3 id="Hint-amp-Reference"><a href="#Hint-amp-Reference" class="headerlink" title="Hint &amp; Reference"></a>Hint &amp; Reference</h3><ul><li>Ruby <ul><li><a href="https://apidock.com/ruby/Array/permutation" target="_blank" rel="noopener">Ruby - apidock permutation</a></li></ul></li><li>JavaScript<ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf" target="_blank" rel="noopener">JS - Array.prototype.indexOf()</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring" target="_blank" rel="noopener">JS - String.prototype.substring()</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" target="_blank" rel="noopener">JS - Array.prototype.concat()</a></li></ul></li></ul><h1 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h1><h3 id="Ruby-1"><a href="#Ruby-1" class="headerlink" title="Ruby"></a>Ruby</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Solution 1</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">permutations</span><span class="params">(string)</span></span></span><br><span class="line">  string.chars.permutation.map(&amp;<span class="symbol">:join</span>).uniq</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure><h3 id="Javascript-1"><a href="#Javascript-1" class="headerlink" title="Javascript"></a>Javascript</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Solution 1</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">permutations</span>(<span class="params">string</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (string.length &lt;= <span class="number">1</span>)</span><br><span class="line">      <span class="keyword">return</span> [string];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> result = [];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; string.length; i++)&#123;</span><br><span class="line">      result = result.concat(permutations(string.substring(<span class="number">0</span>, i) + string.substring(i + <span class="number">1</span>)).map(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> string[i] + e;</span><br><span class="line">      &#125;).filter(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> result.indexOf(e) === <span class="number">-1</span>;</span><br><span class="line">      &#125;));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;22-Permutations&quot;&gt;&lt;a href=&quot;#22-Permutations&quot; class=&quot;headerlink&quot; title=&quot;22 - Permutations&quot;&gt;&lt;/a&gt;22 - Permutations&lt;/h1&gt;&lt;p&gt;Don’t say so m
+      
+    
+    </summary>
+    
+    
+      <category term="12th鐵人賽" scheme="http://chestertang.site/categories/12th%E9%90%B5%E4%BA%BA%E8%B3%BD/"/>
+    
+    
+      <category term="12th鐵人賽" scheme="http://chestertang.site/tags/12th%E9%90%B5%E4%BA%BA%E8%B3%BD/"/>
+    
+      <category term="刷題見習村" scheme="http://chestertang.site/tags/%E5%88%B7%E9%A1%8C%E8%A6%8B%E7%BF%92%E6%9D%91/"/>
+    
+      <category term="CodeWars" scheme="http://chestertang.site/tags/CodeWars/"/>
+    
+  </entry>
   
   <entry>
     <title>21 - Snail</title>
@@ -27,16 +57,11 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;21-Snail&quot;&gt;&lt;a href=&quot;#21-Snail&quot; class=&quot;headerlink&quot; title=&quot;21 - Snail&quot;&gt;&lt;/a&gt;21 - Snail&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Snail Sort&lt;/p&gt;
-&lt;p&gt;Given an &lt;code&gt;n x n&lt;/code&gt; array, return the array elements arranged from outermost elements to the middle element, traveling clockwise.&lt;/p&gt;
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;array = [[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         [&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         [&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;snail(array) &lt;span class=&quot;comment&quot;&gt;#=&amp;gt; [1,2,3,6,9,8,7,4,5]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;For better understanding, please follow the numbers of the next array consecutively:&lt;/p&gt;
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;array = [[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         [&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         [&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;snail(array) &lt;span class=&quot;comment&quot;&gt;#=&amp;gt; [1,2,3,4,5,6,7,8,9]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;NOTE: The idea is not sort the elements from the lowest value to the highest; the idea is to traverse the 2-d array in a clockwise snailshell pattern.&lt;/p&gt;
-&lt;p&gt;NOTE 2: The 0x0 (empty matrix) is represented as en empty array inside an array &lt;code&gt;[[]]&lt;/code&gt;.&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;21-Snail&quot;&gt;&lt;a href=&quot;#21-Snail&quot; class=&quot;headerlink&quot; title=&quot;21 - Snail&quot;&gt;&lt;/a&gt;21 - Snail&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
+&lt;h2 id
+      
     
     </summary>
     
@@ -63,19 +88,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;20-Scramblies&quot;&gt;&lt;a href=&quot;#20-Scramblies&quot; class=&quot;headerlink&quot; title=&quot;20 - Scramblies&quot;&gt;&lt;/a&gt;20 - Scramblies&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Complete the function scramble(str1, str2) that returns true if a portion of str1 characters can be rearranged to match str2, otherwise returns false.&lt;/p&gt;
-&lt;p&gt;Notes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Only lower case letters will be used (a-z). No punctuation or digits will be included.&lt;/li&gt;
-&lt;li&gt;Performance needs to be considered&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input strings s1 and s2 are &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt; terminated.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Examples&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;scramble(&lt;span class=&quot;string&quot;&gt;&#39;rkqodlw&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;world&#39;&lt;/span&gt;) ==&amp;gt; True&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;scramble(&lt;span class=&quot;string&quot;&gt;&#39;cedewaraaossoqqyt&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;codewars&#39;&lt;/span&gt;) ==&amp;gt; True&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;scramble(&lt;span class=&quot;string&quot;&gt;&#39;katas&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;steak&#39;&lt;/span&gt;) ==&amp;gt; False&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;
+      
+      
+        &lt;h1 id=&quot;20-Scramblies&quot;&gt;&lt;a href=&quot;#20-Scramblies&quot; class=&quot;headerlink&quot; title=&quot;20 - Scramblies&quot;&gt;&lt;/a&gt;20 - Scramblies&lt;/h1&gt;&lt;p&gt;Don’t say so much, jus
+      
     
     </summary>
     
@@ -102,13 +118,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;19-RGB-To-Hex-Conversion&quot;&gt;&lt;a href=&quot;#19-RGB-To-Hex-Conversion&quot; class=&quot;headerlink&quot; title=&quot;19 - RGB To Hex Conversion&quot;&gt;&lt;/a&gt;19 - RGB To Hex Conversion&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.&lt;/p&gt;
-&lt;p&gt;Note: Your answer should always be 6 characters long, the shorthand with 3 will not work here.&lt;/p&gt;
-&lt;p&gt;The following are examples of expected output values:&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;rgb(255, 255, 255) # returns FFFFFF&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rgb(255, 255, 300) # returns FFFFFF&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rgb(0,0,0) # returns 000000&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rgb(148, 0, 211) # returns 9400D3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;rgb&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(r, g, b)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;# complete this function&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;19-RGB-To-Hex-Conversion&quot;&gt;&lt;a href=&quot;#19-RGB-To-Hex-Conversion&quot; class=&quot;headerlink&quot; title=&quot;19 - RGB To Hex Conversion&quot;&gt;&lt;/a&gt;19 - RGB To 
+      
     
     </summary>
     
@@ -135,13 +148,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;18-Maximum-subarray-sum&quot;&gt;&lt;a href=&quot;#18-Maximum-subarray-sum&quot; class=&quot;headerlink&quot; title=&quot;18 - Maximum subarray sum&quot;&gt;&lt;/a&gt;18 - Maximum subarray sum&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;The maximum sum subarray problem consists in finding the maximum sum of a contiguous subsequence in an array or list of integers:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;maxSequence [&lt;span class=&quot;number&quot;&gt;-2&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;-3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;-5&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// should be 6: [4, -1, 2, 1]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Easy case is when the list is made up of only positive numbers and the maximum sum is the sum of the whole array. If the list is made up of only negative numbers, return 0 instead.&lt;/p&gt;
-&lt;p&gt;Empty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.&lt;/p&gt;
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;max_sequence&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(arr)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;#your code here&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;18-Maximum-subarray-sum&quot;&gt;&lt;a href=&quot;#18-Maximum-subarray-sum&quot; class=&quot;headerlink&quot; title=&quot;18 - Maximum subarray sum&quot;&gt;&lt;/a&gt;18 - Maximum su
+      
     
     </summary>
     
@@ -168,15 +178,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;17-Valid-Parentheses&quot;&gt;&lt;a href=&quot;#17-Valid-Parentheses&quot; class=&quot;headerlink&quot; title=&quot;17 - Valid Parentheses&quot;&gt;&lt;/a&gt;17 - Valid Parentheses&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Write a function called that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it’s invalid.&lt;/p&gt;
-&lt;p&gt;Examples&lt;/p&gt;
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;()&quot;&lt;/span&gt;              =&amp;gt;  &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;)(()))&quot;&lt;/span&gt;          =&amp;gt;  &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;(&quot;&lt;/span&gt;               =&amp;gt;  &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;(())((()())())&quot;&lt;/span&gt;  =&amp;gt;  &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Constraints&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;0 &amp;lt;= input.length &amp;lt;= 100&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Along with opening (&lt;code&gt;(&lt;/code&gt;) and closing (&lt;code&gt;)&lt;/code&gt;) parenthesis, input may contain any valid ASCII characters. Furthermore, the input string may be empty and/or not contain any parentheses at all. Do not treat other forms of brackets as parentheses (e.g. &lt;code&gt;[]&lt;/code&gt;, &lt;code&gt;{}&lt;/code&gt;, &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt;).&lt;/p&gt;
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;
+      
+      
+        &lt;h1 id=&quot;17-Valid-Parentheses&quot;&gt;&lt;a href=&quot;#17-Valid-Parentheses&quot; class=&quot;headerlink&quot; title=&quot;17 - Valid Parentheses&quot;&gt;&lt;/a&gt;17 - Valid Parentheses&lt;/
+      
     
     </summary>
     
@@ -203,14 +208,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;16-Memoized-Fibonacci&quot;&gt;&lt;a href=&quot;#16-Memoized-Fibonacci&quot; class=&quot;headerlink&quot; title=&quot;16 - Memoized Fibonacci&quot;&gt;&lt;/a&gt;16 - Memoized Fibonacci&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Problem Context&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Fibonacci_number&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Fibonacci&lt;/a&gt; sequence is traditionally used to explain tree recursion.&lt;/p&gt;
-&lt;p&gt;This algorithm serves welll its educative purpose but it’s &lt;a href=&quot;https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2.2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tremendously inefficient&lt;/a&gt;, not only because of recursion, but because we invoke the fibonacci function twice, and the right branch of recursion (i.e. &lt;code&gt;fibonacci(n-2)&lt;/code&gt;) recalculates all the Fibonacci numbers already calculated by the left branch (i.e. &lt;code&gt;fibonacci(n-1)&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;This algorithm is so inefficient that the time to calculate any Fibonacci number over 50 is simply too much. You may go for a cup of coffee or go take a nap while you wait for the answer. But if you try it here in Code Wars you will most likely get a code timeout before any answers.&lt;/p&gt;
-&lt;p&gt;For this particular Kata we want to implement the memoization solution. This will be cool because it will let us keep using the tree recursion algorithm while still keeping it sufficiently optimized to get an answer very rapidly.&lt;/p&gt;
-&lt;p&gt;The trick of the memoized version is that we will keep a cache data structure (most likely an associative array) where we will store the Fibonacci numbers as we calculate them. When a Fibonacci number is calculated, we first look it up in the cache, if it’s not there, we calculate it and put it in the cache, otherwise we returned the cached number.&lt;/p&gt;
-&lt;p&gt;Refactor the function into a recursive Fibonacci function that using a memoized data structure avoids the deficiencies of tree recursion Can you make it so the memoization cache is private to this function?&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;16-Memoized-Fibonacci&quot;&gt;&lt;a href=&quot;#16-Memoized-Fibonacci&quot; class=&quot;headerlink&quot; title=&quot;16 - Memoized Fibonacci&quot;&gt;&lt;/a&gt;16 - Memoized Fibonac
+      
     
     </summary>
     
@@ -237,16 +238,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;15-Directions-Reduction&quot;&gt;&lt;a href=&quot;#15-Directions-Reduction&quot; class=&quot;headerlink&quot; title=&quot;15 - Directions Reduction&quot;&gt;&lt;/a&gt;15 - Directions Reduction&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Once upon a time, on a way through the old wild mountainous west,…&lt;br&gt;… a man was given directions to go from one point to another. The directions were “NORTH”, “SOUTH”, “WEST”, “EAST”. Clearly “NORTH” and “SOUTH” are opposite, “WEST” and “EAST” too.&lt;/p&gt;
-&lt;p&gt;Going to one direction and coming back the opposite direction right away is a needless effort. Since this is the wild west, with dreadfull weather and not much water, it’s important to save yourself some energy, otherwise you might die of thirst!&lt;/p&gt;
-&lt;p&gt;How I crossed a mountain desert the smart way.&lt;br&gt;The directions given to the man are, for example, the following (depending on the language):&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&quot;NORTH&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;SOUTH&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;SOUTH&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;EAST&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;WEST&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;NORTH&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;WEST&quot;&lt;/span&gt;].&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;You can immediatly see that going “NORTH” and immediately “SOUTH” is not reasonable, better stay to the same place! So the task is to give to the man a simplified version of the plan. A better plan in this case is simply:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&quot;WEST&quot;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Other examples:&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;15-Directions-Reduction&quot;&gt;&lt;a href=&quot;#15-Directions-Reduction&quot; class=&quot;headerlink&quot; title=&quot;15 - Directions Reduction&quot;&gt;&lt;/a&gt;15 - Directions
+      
     
     </summary>
     
@@ -273,14 +268,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;14-Simple-Pig-Latin&quot;&gt;&lt;a href=&quot;#14-Simple-Pig-Latin&quot; class=&quot;headerlink&quot; title=&quot;14 - Simple Pig Latin&quot;&gt;&lt;/a&gt;14 - Simple Pig Latin&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Move the first letter of each word to the end of it, then add “ay” to the end of the word. Leave punctuation marks untouched.&lt;/p&gt;
-&lt;p&gt;Examples&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pig_it(&#39;Pig latin is cool&#39;) # igPay atinlay siay oolcay&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pig_it(&#39;Hello world !&#39;)     # elloHay orldway !&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;pig_it&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;text&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;# ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;Sample-Testing&quot;&gt;&lt;a href=&quot;#Sample-Testing&quot; class=&quot;headerlink&quot; title=&quot;Sample Testing&quot;&gt;&lt;/a&gt;Sample Testing&lt;/h4&gt;
+      
+      
+        &lt;h1 id=&quot;14-Simple-Pig-Latin&quot;&gt;&lt;a href=&quot;#14-Simple-Pig-Latin&quot; class=&quot;headerlink&quot; title=&quot;14 - Simple Pig Latin&quot;&gt;&lt;/a&gt;14 - Simple Pig Latin&lt;/h1&gt;&lt;
+      
     
     </summary>
     
@@ -307,19 +298,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;13-int32-to-IPv4&quot;&gt;&lt;a href=&quot;#13-int32-to-IPv4&quot; class=&quot;headerlink&quot; title=&quot;13 - int32 to IPv4&quot;&gt;&lt;/a&gt;13 - int32 to IPv4&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Take the following IPv4 address: &lt;code&gt;128.32.10.1&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;This address has 4 octets where each octet is a single byte (or 8 bits).&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1st octet 128 has the binary representation: &lt;code&gt;10000000&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;2nd octet 32 has the binary representation: &lt;code&gt;00100000&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;3rd octet 10 has the binary representation: &lt;code&gt;00001010&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;4th octet 1 has the binary representation: &lt;code&gt;00000001&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So &lt;code&gt;128.32.10.1&lt;/code&gt; == &lt;code&gt;10000000.00100000.00001010.00000001&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Because the above IP address has 32 bits, we can represent it as the unsigned 32 bit number: &lt;code&gt;2149583361&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Complete the function that takes an unsigned 32 bit number and returns a string representation of its IPv4 address.&lt;/p&gt;
-&lt;p&gt;Examples&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;13-int32-to-IPv4&quot;&gt;&lt;a href=&quot;#13-int32-to-IPv4&quot; class=&quot;headerlink&quot; title=&quot;13 - int32 to IPv4&quot;&gt;&lt;/a&gt;13 - int32 to IPv4&lt;/h1&gt;&lt;p&gt;Don’t say 
+      
     
     </summary>
     
@@ -346,16 +328,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;12-Greed-is-Dice&quot;&gt;&lt;a href=&quot;#12-Greed-is-Dice&quot; class=&quot;headerlink&quot; title=&quot;12 - Greed is Dice&quot;&gt;&lt;/a&gt;12 - Greed is Dice&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Greed is a dice game played with five six-sided dice. Your mission, should you choose to accept it, is to score a throw according to these rules. You will always be given an array with five six-sided dice values.&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Three &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;&#39;s =&amp;gt; 1000 points&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;Three 6&#39;&lt;/span&gt;s =&amp;gt;  &lt;span class=&quot;number&quot;&gt;600&lt;/span&gt; points&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Three &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;&#39;s =&amp;gt;  500 points&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;Three 4&#39;&lt;/span&gt;s =&amp;gt;  &lt;span class=&quot;number&quot;&gt;400&lt;/span&gt; points&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Three &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;&#39;s =&amp;gt;  300 points&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;Three 2&#39;&lt;/span&gt;s =&amp;gt;  &lt;span class=&quot;number&quot;&gt;200&lt;/span&gt; points&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;One   &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;   =&amp;gt;  &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; points&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;One   &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;   =&amp;gt;   &lt;span class=&quot;number&quot;&gt;50&lt;/span&gt; point&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;A single die can only be counted once in each roll. For example, a given “5” can only count as part of a triplet (contributing to the 500 points) or as a single 50 points, but not both in the same roll.&lt;/p&gt;
-&lt;p&gt;Example scoring&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Throw       Score&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;---------   ------------------&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;number&quot;&gt;250&lt;/span&gt;:  &lt;span class=&quot;number&quot;&gt;50&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; the &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;) + &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; * &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; the &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;s)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;number&quot;&gt;1100&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; three &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;s) + &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; the other &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;   &lt;span class=&quot;number&quot;&gt;450&lt;/span&gt;:  &lt;span class=&quot;number&quot;&gt;400&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; three &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;s) + &lt;span class=&quot;number&quot;&gt;50&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; the &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;In some languages, it is possible to mutate the input to the function. This is something that you should never do. If you mutate the input, you will not be able to pass all the tests.&lt;/p&gt;
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;
+      
+      
+        &lt;h1 id=&quot;12-Greed-is-Dice&quot;&gt;&lt;a href=&quot;#12-Greed-is-Dice&quot; class=&quot;headerlink&quot; title=&quot;12 - Greed is Dice&quot;&gt;&lt;/a&gt;12 - Greed is Dice&lt;/h1&gt;&lt;p&gt;Don’t say 
+      
     
     </summary>
     
@@ -382,13 +358,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;11-Extract-the-domain-name-from-a-URL&quot;&gt;&lt;a href=&quot;#11-Extract-the-domain-name-from-a-URL&quot; class=&quot;headerlink&quot; title=&quot;11 - Extract the domain name from a URL&quot;&gt;&lt;/a&gt;11 - Extract the domain name from a URL&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;domain_name(&lt;span class=&quot;string&quot;&gt;&quot;http://github.com/carbonfive/raygun&quot;&lt;/span&gt;) == &lt;span class=&quot;string&quot;&gt;&quot;github&quot;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;domain_name(&lt;span class=&quot;string&quot;&gt;&quot;http://www.zombie-bites.com&quot;&lt;/span&gt;) == &lt;span class=&quot;string&quot;&gt;&quot;zombie-bites&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;domain_name(&lt;span class=&quot;string&quot;&gt;&quot;https://www.cnet.com&quot;&lt;/span&gt;) == &lt;span class=&quot;string&quot;&gt;&quot;cnet&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;domain_name&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(url)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;# return just the domain name&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;Sample-Testing&quot;&gt;&lt;a href=&quot;#Sample-Testing&quot; class=&quot;headerlink&quot; title=&quot;Sample Testing&quot;&gt;&lt;/a&gt;Sample Testing&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals(domain_name(&lt;span class=&quot;string&quot;&gt;&quot;http://google.com&quot;&lt;/span&gt;), &lt;span class=&quot;string&quot;&gt;&quot;google&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals(domain_name(&lt;span class=&quot;string&quot;&gt;&quot;http://google.co.jp&quot;&lt;/span&gt;), &lt;span class=&quot;string&quot;&gt;&quot;google&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals(domain_name(&lt;span class=&quot;string&quot;&gt;&quot;www.xakep.ru&quot;&lt;/span&gt;), &lt;span class=&quot;string&quot;&gt;&quot;xakep&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals(domain_name(&lt;span class=&quot;string&quot;&gt;&quot;https://youtube.com&quot;&lt;/span&gt;), &lt;span class=&quot;string&quot;&gt;&quot;youtube&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;11-Extract-the-domain-name-from-a-URL&quot;&gt;&lt;a href=&quot;#11-Extract-the-domain-name-from-a-URL&quot; class=&quot;headerlink&quot; title=&quot;11 - Extract the d
+      
     
     </summary>
     
@@ -415,22 +388,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;10-Playing-with-digits&quot;&gt;&lt;a href=&quot;#10-Playing-with-digits&quot; class=&quot;headerlink&quot; title=&quot;10 - Playing with digits&quot;&gt;&lt;/a&gt;10 - Playing with digits&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Some numbers have funny properties. For example:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;89 –&amp;gt; 8¹ + 9² = 89 * 1&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;695 –&amp;gt; 6² + 9³ + 5⁴= 1390 = 695 * 2&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;46288 –&amp;gt; 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Given a positive integer n written as abcd… (a, b, c, d… being digits) and a positive integer p&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;we want to find a positive integer k, if it exists, such as the sum of the digits of n taken to the successive powers of p is equal to k * n.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In other words:&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;10-Playing-with-digits&quot;&gt;&lt;a href=&quot;#10-Playing-with-digits&quot; class=&quot;headerlink&quot; title=&quot;10 - Playing with digits&quot;&gt;&lt;/a&gt;10 - Playing with 
+      
     
     </summary>
     
@@ -457,15 +418,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;09-Sums-of-Parts&quot;&gt;&lt;a href=&quot;#09-Sums-of-Parts&quot; class=&quot;headerlink&quot; title=&quot;09 - Sums of Parts&quot;&gt;&lt;/a&gt;09 - Sums of Parts&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Let us consider this example (array written in general format):&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ls = [0, 1, 3, 6, 10]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Its following parts:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  ls = [&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  ls = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  ls = [&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  ls = [6, 10]# 09 - Sums of Parts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Don&lt;span class=&quot;string&quot;&gt;&#39;t say so much, just coding...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;## Instruction&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;Let us consider this example (array written in general format):&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;`ls = [0, 1, 3, 6, 10]`&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;Its following parts:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;```javascript&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;  ls = [0, 1, 3, 6, 10]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;  ls = [1, 3, 6, 10]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;  ls = [3, 6, 10]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;  ls = [6, 10]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;  ls = [10]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;  ls = []&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;The corresponding sums are (put together in a list): &lt;code&gt;[20, 20, 19, 16, 10, 0]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;The function parts_sums (or its variants in other languages) will take as parameter a list ls and return a list of the sums of its parts as defined above.&lt;/p&gt;
-&lt;p&gt;Other Examples:&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;09-Sums-of-Parts&quot;&gt;&lt;a href=&quot;#09-Sums-of-Parts&quot; class=&quot;headerlink&quot; title=&quot;09 - Sums of Parts&quot;&gt;&lt;/a&gt;09 - Sums of Parts&lt;/h1&gt;&lt;p&gt;Don’t say 
+      
     
     </summary>
     
@@ -492,17 +448,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;08-Mexican-Wave&quot;&gt;&lt;a href=&quot;#08-Mexican-Wave&quot; class=&quot;headerlink&quot; title=&quot;08 - Mexican Wave&quot;&gt;&lt;/a&gt;08 - Mexican Wave&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;In this simple Kata your task is to create a function that turns a string into a Mexican Wave. You will be passed a string and you must return that string in an array where an uppercase letter is a person standing up. &lt;/p&gt;
-&lt;p&gt;Rules:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The input string will always be lower case but maybe empty.&lt;/li&gt;
-&lt;li&gt;If the character in the string is whitespace then pass over it as if it was an empty seat&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Examples:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wave(&lt;span class=&quot;string&quot;&gt;&quot;hello&quot;&lt;/span&gt;) =&amp;gt; [&lt;span class=&quot;string&quot;&gt;&quot;Hello&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;hEllo&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;heLlo&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;helLo&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;hellO&quot;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;
+      
+      
+        &lt;h1 id=&quot;08-Mexican-Wave&quot;&gt;&lt;a href=&quot;#08-Mexican-Wave&quot; class=&quot;headerlink&quot; title=&quot;08 - Mexican Wave&quot;&gt;&lt;/a&gt;08 - Mexican Wave&lt;/h1&gt;&lt;p&gt;Don’t say so m
+      
     
     </summary>
     
@@ -529,13 +478,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;07-Sum-of-Digits-Digital-Root&quot;&gt;&lt;a href=&quot;#07-Sum-of-Digits-Digital-Root&quot; class=&quot;headerlink&quot; title=&quot;07 - Sum of Digits / Digital Root&quot;&gt;&lt;/a&gt;07 - Sum of Digits / Digital Root&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Digital_root&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Digital root&lt;/a&gt; is the recursive sum of all the digits in a number.&lt;/p&gt;
-&lt;p&gt;Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. This is only applicable to the natural numbers.&lt;/p&gt;
-&lt;p&gt;Examples:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;number&quot;&gt;16&lt;/span&gt;   --&amp;gt;  &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt; = &lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;number&quot;&gt;942&lt;/span&gt;  --&amp;gt;  &lt;span class=&quot;number&quot;&gt;9&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; = &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;  --&amp;gt;  &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; = &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;132189&lt;/span&gt;  --&amp;gt;  &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;8&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;9&lt;/span&gt; = &lt;span class=&quot;number&quot;&gt;24&lt;/span&gt;  --&amp;gt;  &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; = &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;493193&lt;/span&gt;  --&amp;gt;  &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;9&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;9&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; = &lt;span class=&quot;number&quot;&gt;29&lt;/span&gt;  --&amp;gt;  &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;9&lt;/span&gt; = &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;  --&amp;gt;  &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;digital_root&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(n)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;# ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;07-Sum-of-Digits-Digital-Root&quot;&gt;&lt;a href=&quot;#07-Sum-of-Digits-Digital-Root&quot; class=&quot;headerlink&quot; title=&quot;07 - Sum of Digits / Digital Root&quot;
+      
     
     </summary>
     
@@ -562,15 +508,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;06-Character-with-longest-consecutive-repetition&quot;&gt;&lt;a href=&quot;#06-Character-with-longest-consecutive-repetition&quot; class=&quot;headerlink&quot; title=&quot;06 - Character with longest consecutive repetition&quot;&gt;&lt;/a&gt;06 - Character with longest consecutive repetition&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;For a given string s find the character c (or C) with longest consecutive repetition and return:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[c, l]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;where l (or L) is the length of the repetition. If there are two or more characters with the same l return the first in order of appearance.&lt;/p&gt;
-&lt;p&gt;For empty string return:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;
+      
+      
+        &lt;h1 id=&quot;06-Character-with-longest-consecutive-repetition&quot;&gt;&lt;a href=&quot;#06-Character-with-longest-consecutive-repetition&quot; class=&quot;headerlink&quot; tit
+      
     
     </summary>
     
@@ -597,13 +538,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;05-The-Hashtag-Generator&quot;&gt;&lt;a href=&quot;#05-The-Hashtag-Generator&quot; class=&quot;headerlink&quot; title=&quot;05 - The Hashtag Generator&quot;&gt;&lt;/a&gt;05 - The Hashtag Generator&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;The marketing team is spending way too much time typing in hashtags.&lt;br&gt;Let’s help them with our own Hashtag Generator!&lt;/p&gt;
-&lt;p&gt;Here’s the deal:&lt;/p&gt;
-&lt;p&gt;It must start with a hashtag (&lt;code&gt;#&lt;/code&gt;).&lt;br&gt;All words must have their first letter capitalized.&lt;br&gt;If the final result is longer than 140 chars it must return &lt;code&gt;false&lt;/code&gt;.&lt;br&gt;If the input or the result is an empty string it must return &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;Example&quot;&gt;&lt;a href=&quot;#Example&quot; class=&quot;headerlink&quot; title=&quot;Example&quot;&gt;&lt;/a&gt;Example&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot; Hello there thanks for trying my Kata&quot;&lt;/span&gt;  =&amp;gt;  &lt;span class=&quot;string&quot;&gt;&quot;#HelloThereThanksForTryingMyKata&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;    Hello     World   &quot;&lt;/span&gt;                  =&amp;gt;  &lt;span class=&quot;string&quot;&gt;&quot;#HelloWorld&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt;                                        =&amp;gt;  &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;
+      
+      
+        &lt;h1 id=&quot;05-The-Hashtag-Generator&quot;&gt;&lt;a href=&quot;#05-The-Hashtag-Generator&quot; class=&quot;headerlink&quot; title=&quot;05 - The Hashtag Generator&quot;&gt;&lt;/a&gt;05 - The Has
+      
     
     </summary>
     
@@ -630,12 +568,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;04-Bit-Counting&quot;&gt;&lt;a href=&quot;#04-Bit-Counting&quot; class=&quot;headerlink&quot; title=&quot;04 - Bit Counting&quot;&gt;&lt;/a&gt;04 - Bit Counting&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.&lt;/p&gt;
-&lt;p&gt;Example: The binary representation of &lt;code&gt;1234&lt;/code&gt; is &lt;code&gt;10011010010&lt;/code&gt;, so the function should return &lt;code&gt;5&lt;/code&gt; in this case&lt;/p&gt;
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;count_bits&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(n)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;# Program Me&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;Sample-Testing&quot;&gt;&lt;a href=&quot;#Sample-Testing&quot; class=&quot;headerlink&quot; title=&quot;Sample Testing&quot;&gt;&lt;/a&gt;Sample Testing&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals count_bits(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;), &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals count_bits(&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;), &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals count_bits(&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;), &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals count_bits(&lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;), &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals count_bits(&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;), &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;04-Bit-Counting&quot;&gt;&lt;a href=&quot;#04-Bit-Counting&quot; class=&quot;headerlink&quot; title=&quot;04 - Bit Counting&quot;&gt;&lt;/a&gt;04 - Bit Counting&lt;/h1&gt;&lt;p&gt;Don’t say so m
+      
     
     </summary>
     
@@ -662,47 +598,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;03-Highest-Scoring-Word&quot;&gt;&lt;a href=&quot;#03-Highest-Scoring-Word&quot; class=&quot;headerlink&quot; title=&quot;03 - Highest Scoring Word&quot;&gt;&lt;/a&gt;03 - Highest Scoring Word&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Given a string of words, you need to find the highest scoring word.&lt;/p&gt;
-&lt;p&gt;Each letter of a word scores points according to its position in the alphabet: &lt;code&gt;a = 1, b = 2, c = 3&lt;/code&gt; etc.&lt;/p&gt;
-&lt;p&gt;You need to return the highest scoring word as a string.&lt;/p&gt;
-&lt;p&gt;If two words score the same, return the word that appears earliest in the original string.&lt;/p&gt;
-&lt;p&gt;All letters will be lowercase and all inputs will be valid.&lt;/p&gt;
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;
-    
-    </summary>
-    
-    
-      <category term="12th鐵人賽" scheme="http://chestertang.site/categories/12th%E9%90%B5%E4%BA%BA%E8%B3%BD/"/>
-    
-    
-      <category term="12th鐵人賽" scheme="http://chestertang.site/tags/12th%E9%90%B5%E4%BA%BA%E8%B3%BD/"/>
-    
-      <category term="刷題見習村" scheme="http://chestertang.site/tags/%E5%88%B7%E9%A1%8C%E8%A6%8B%E7%BF%92%E6%9D%91/"/>
-    
-      <category term="CodeWars" scheme="http://chestertang.site/tags/CodeWars/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>見習村02 - Unique In Order</title>
-    <link href="http://chestertang.site/2020/09/17/codewars02/"/>
-    <id>http://chestertang.site/2020/09/17/codewars02/</id>
-    <published>2020-09-17T01:00:00.000Z</published>
-    <updated>2020-09-17T03:18:46.755Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="02-Unique-In-Order"><a href="#02-Unique-In-Order" class="headerlink" title="02 - Unique In Order"></a>02 - Unique In Order</h1><p>Don’t say so much, just coding…</p><h2 id="Instruction"><a href="#Instruction" class="headerlink" title="Instruction"></a>Instruction</h2><p>Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.</p><p>For example:</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">uniqueInOrder(<span class="string">'AAAABBBCCDAABBB'</span>) == [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>, <span class="string">'A'</span>, <span class="string">'B'</span>]</span><br><span class="line">uniqueInOrder(<span class="string">'ABBCcAD'</span>)         == [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'c'</span>, <span class="string">'A'</span>, <span class="string">'D'</span>]</span><br><span class="line">uniqueInOrder([<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>])       == [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br></pre></td></tr></table></figure><h3 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h3><h4 id="Init"><a href="#Init" class="headerlink" title="Init"></a>Init</h4><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">unique_in_order</span><span class="params">(iterable)</span></span></span><br><span class="line">  <span class="comment"># put your solution here</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure><h4 id="Sample-Testing"><a href="#Sample-Testing" class="headerlink" title="Sample Testing"></a>Sample Testing</h4><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Test.assert_equals(unique_in_order(<span class="string">'AAAABBBCCDAABBB'</span>), [<span class="string">'A'</span>,<span class="string">'B'</span>,<span class="string">'C'</span>,<span class="string">'D'</span>,<span class="string">'A'</span>,<span class="string">'B'</span>])</span><br></pre></td></tr></table></figure><h3 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h3><h4 id="Init-1"><a href="#Init-1" class="headerlink" title="Init"></a>Init</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> uniqueInOrder = <span class="function"><span class="keyword">function</span>(<span class="params">iterable</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// your code here - remember iterable can be a string or an array</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="Sample-Testing-1"><a href="#Sample-Testing-1" class="headerlink" title="Sample Testing"></a>Sample Testing</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Test.assertSimilar(uniqueInOrder(<span class="string">'AAAABBBCCDAABBB'</span>), [<span class="string">'A'</span>,<span class="string">'B'</span>,<span class="string">'C'</span>,<span class="string">'D'</span>,<span class="string">'A'</span>,<span class="string">'B'</span>])</span><br></pre></td></tr></table></figure><h1 id="Thinking"><a href="#Thinking" class="headerlink" title="Thinking"></a>Thinking</h1><p>想法(1): 從舉例可以看出會傳入的 <code>iterable</code> 的型態會是陣列、字串，所以需先判斷型態，否則後面能接的方法會有不能用的情況<br>想法(2): 分群的概念，如果後面的英文字跟前一個相同的話，只顯示一個<br>想法(3): 可以用空陣列塞值進去、或者是分群 <code>select</code> 取 <code>uniq</code> 的那個值</p><p><img src="https://ithelp.ithome.com.tw/upload/images/20200917/20120826A5q7a8riTw.jpg" alt="https://ithelp.ithome.com.tw/upload/images/20200917/20120826A5q7a8riTw.jpg"><br>圖片來源：<a href="https://unsplash.com/photos/PypjzKTUqLo" target="_blank" rel="noopener">Unsplash Roman Bozhko</a></p><h3 id="Hint-amp-Reference"><a href="#Hint-amp-Reference" class="headerlink" title="Hint &amp; Reference"></a>Hint &amp; Reference</h3><ul><li>Ruby <ul><li><a href="https://apidock.com/ruby/Enumerable/chunk" target="_blank" rel="noopener">Ruby - apidock Chunk</a></li><li><a href="https://apidock.com/ruby/String/squeeze" target="_blank" rel="noopener">Ruby - apidock Squeeze</a></li></ul></li><li>JavaScript<ul><li><a href="https://www.samanthaming.com/tidbits/83-4-ways-to-convert-string-to-character-array/" target="_blank" rel="noopener">JS - 4 Ways to Convert String to Character Array in JavaScript</a></li><li><a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/push" target="_blank" rel="noopener">JS - MDN Array.prototype.push</a></li></ul></li></ul><h1 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h1><h3 id="Ruby-1"><a href="#Ruby-1" class="headerlink" title="Ruby"></a>Ruby</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Solution 1</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">unique_in_order</span><span class="params">(iterable)</span></span></span><br><span class="line">  (iterable.is_a?(String) ? iterable.split(<span class="string">''</span>) : iterable)</span><br><span class="line">    .chunk&#123; <span class="params">|s|</span> s &#125;</span><br><span class="line">    .map(&amp;<span class="symbol">:first</span>)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Solution 2</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">unique_in_order</span><span class="params">(iterable)</span></span></span><br><span class="line">  (iterable.is_a?(String) ? iterable.chars : iterable)</span><br><span class="line">    .chunk &#123; <span class="params">|s|</span> s &#125;</span><br><span class="line">    .map(&amp;<span class="symbol">:first</span>)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Solution 3</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">unique_in_order</span><span class="params">(iterable)</span></span></span><br><span class="line">  iterable.is_a?(String) ? iterable.squeeze.split(<span class="string">''</span>) : iterable.uniq</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure><h3 id="Javascript-1"><a href="#Javascript-1" class="headerlink" title="Javascript"></a>Javascript</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Solution 1</span></span><br><span class="line"><span class="keyword">var</span> uniqueInOrder = <span class="function"><span class="keyword">function</span>(<span class="params">iterable</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> result = [];</span><br><span class="line">  <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; iterable.length; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (iterable[i] != iterable[i+<span class="number">1</span>]) result.push(iterable[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Solution 2</span></span><br><span class="line"><span class="keyword">var</span> uniqueInOrder = <span class="function"><span class="keyword">function</span>(<span class="params">iterable</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> [...iterable].filter(<span class="function">(<span class="params">i, index</span>) =&gt;</span> i !== iterable[index<span class="number">-1</span>])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;02-Unique-In-Order&quot;&gt;&lt;a href=&quot;#02-Unique-In-Order&quot; class=&quot;headerlink&quot; title=&quot;02 - Unique In Order&quot;&gt;&lt;/a&gt;02 - Unique In Order&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.&lt;/p&gt;
-&lt;p&gt;For example:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;uniqueInOrder(&lt;span class=&quot;string&quot;&gt;&#39;AAAABBBCCDAABBB&#39;&lt;/span&gt;) == [&lt;span class=&quot;string&quot;&gt;&#39;A&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;B&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;C&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;D&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;A&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;B&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;uniqueInOrder(&lt;span class=&quot;string&quot;&gt;&#39;ABBCcAD&#39;&lt;/span&gt;)         == [&lt;span class=&quot;string&quot;&gt;&#39;A&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;B&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;C&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;c&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;A&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;D&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;uniqueInOrder([&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;])       == [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unique_in_order&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(iterable)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;# put your solution here&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;Sample-Testing&quot;&gt;&lt;a href=&quot;#Sample-Testing&quot; class=&quot;headerlink&quot; title=&quot;Sample Testing&quot;&gt;&lt;/a&gt;Sample Testing&lt;/h4&gt;
+      
+      
+        &lt;h1 id=&quot;03-Highest-Scoring-Word&quot;&gt;&lt;a href=&quot;#03-Highest-Scoring-Word&quot; class=&quot;headerlink&quot; title=&quot;03 - Highest Scoring Word&quot;&gt;&lt;/a&gt;03 - Highest Sc
+      
     
     </summary>
     
