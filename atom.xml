@@ -27,16 +27,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;30-A-Chain-adding-function&quot;&gt;&lt;a href=&quot;#30-A-Chain-adding-function&quot; class=&quot;headerlink&quot; title=&quot;30 - A Chain adding function&quot;&gt;&lt;/a&gt;30 - A Chain adding function&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;We want to create a function that will add numbers together when called in succession.&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;add(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// returns 3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;We also want to be able to continue to add numbers to our chain.&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;add(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;)(&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;// 6&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;add(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;)(&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;)(&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;// 10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;add(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;)(&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;)(&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;)(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;// 15&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;and so on.&lt;/p&gt;
-&lt;p&gt;A single call should return the number passed in.&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;add(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;// 1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;30-A-Chain-adding-function&quot;&gt;&lt;a href=&quot;#30-A-Chain-adding-function&quot; class=&quot;headerlink&quot; title=&quot;30 - A Chain adding function&quot;&gt;&lt;/a&gt;30 - A
+      
     
     </summary>
     
@@ -63,15 +57,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;29-Sum-of-Intervals&quot;&gt;&lt;a href=&quot;#29-Sum-of-Intervals&quot; class=&quot;headerlink&quot; title=&quot;29 - Sum of Intervals&quot;&gt;&lt;/a&gt;29 - Sum of Intervals&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Write a function called sumIntervals/sum_intervals() that accepts an array of intervals, and returns the sum of all the interval lengths. Overlapping intervals should only be counted once.&lt;/p&gt;
-&lt;p&gt;Intervals&lt;br&gt;Intervals are represented by a pair of integers in the form of an array. The first value of the interval will always be less than the second value. Interval example: [1, 5] is an interval from 1 to 5. The length of this interval is 4.&lt;/p&gt;
-&lt;p&gt;Overlapping Intervals&lt;br&gt;List containing overlapping intervals:&lt;/p&gt;
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;The sum of the lengths of these intervals is 7. Since [1, 4] and [3, 5] overlap, we can treat the interval as [1, 5], which has a length of 4.&lt;/p&gt;
-&lt;p&gt;Examples:&lt;/p&gt;
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sumIntervals( [&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;] ); &lt;span class=&quot;regexp&quot;&gt;//&lt;/span&gt; =&amp;gt; &lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sumIntervals( [&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;] ); &lt;span class=&quot;regexp&quot;&gt;//&lt;/span&gt; =&amp;gt; &lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sumIntervals( [&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;16&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;19&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;] ); &lt;span class=&quot;regexp&quot;&gt;//&lt;/span&gt; =&amp;gt; &lt;span class=&quot;number&quot;&gt;19&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;29-Sum-of-Intervals&quot;&gt;&lt;a href=&quot;#29-Sum-of-Intervals&quot; class=&quot;headerlink&quot; title=&quot;29 - Sum of Intervals&quot;&gt;&lt;/a&gt;29 - Sum of Intervals&lt;/h1&gt;&lt;
+      
     
     </summary>
     
@@ -98,15 +87,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;28-Find-the-missing-letter&quot;&gt;&lt;a href=&quot;#28-Find-the-missing-letter&quot; class=&quot;headerlink&quot; title=&quot;28 - Find the missing letter&quot;&gt;&lt;/a&gt;28 - Find the missing letter&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Write a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.&lt;/p&gt;
-&lt;p&gt;You will always get an valid array. And it will be always exactly one letter be missing. The length of the array will always be at least 2.&lt;br&gt;The array will always contain letters in only one case.&lt;/p&gt;
-&lt;p&gt;Example:&lt;/p&gt;
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;b&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;c&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;d&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;f&#39;&lt;/span&gt;] -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;e&#39;&lt;/span&gt; [&lt;span class=&quot;string&quot;&gt;&#39;O&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;Q&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;R&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;S&#39;&lt;/span&gt;] -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;P&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&quot;a&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;b&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;c&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;d&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;f&quot;&lt;/span&gt;] -&amp;gt; &lt;span class=&quot;string&quot;&gt;&quot;e&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&quot;O&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;Q&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;R&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;S&quot;&lt;/span&gt;] -&amp;gt; &lt;span class=&quot;string&quot;&gt;&quot;P&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(Use the English alphabet with &lt;span class=&quot;number&quot;&gt;26&lt;/span&gt; letters!)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Have fun coding it and please don’t forget to vote and rank this kata! :-)&lt;/p&gt;
-&lt;p&gt;I have also created other katas. Take a look if you enjoyed this kata!&lt;/p&gt;
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;
+      
+      
+        &lt;h1 id=&quot;28-Find-the-missing-letter&quot;&gt;&lt;a href=&quot;#28-Find-the-missing-letter&quot; class=&quot;headerlink&quot; title=&quot;28 - Find the missing letter&quot;&gt;&lt;/a&gt;28 - F
+      
     
     </summary>
     
@@ -133,12 +117,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;27-First-non-repeating-character&quot;&gt;&lt;a href=&quot;#27-First-non-repeating-character&quot; class=&quot;headerlink&quot; title=&quot;27 - First non-repeating character&quot;&gt;&lt;/a&gt;27 - First non-repeating character&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Write a function named &lt;code&gt;first_non_repeating_letter&lt;/code&gt; that takes a string input, and returns the first character that is not repeated anywhere in the string.&lt;/p&gt;
-&lt;p&gt;For example, if given the input &lt;code&gt;&amp;#39;stress&amp;#39;&lt;/code&gt;, the function should return &lt;code&gt;&amp;#39;t&amp;#39;&lt;/code&gt;, since the letter t only occurs once in the string, and occurs first in the string.&lt;/p&gt;
-&lt;p&gt;As an added challenge, upper- and lowercase letters are considered the same character, but the function should return the correct case for the initial letter. For example, the input &lt;code&gt;&amp;#39;sTreSS&amp;#39;&lt;/code&gt; should return &lt;code&gt;&amp;#39;T&amp;#39;&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;If a string contains all repeating characters, it should return an empty string (&lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;) or &lt;code&gt;None&lt;/code&gt; – see sample tests.&lt;/p&gt;
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;tongues&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(code)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;#your code here&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;27-First-non-repeating-character&quot;&gt;&lt;a href=&quot;#27-First-non-repeating-character&quot; class=&quot;headerlink&quot; title=&quot;27 - First non-repeating cha
+      
     
     </summary>
     
@@ -165,14 +147,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;26-Tongues&quot;&gt;&lt;a href=&quot;#26-Tongues&quot; class=&quot;headerlink&quot; title=&quot;26 - Tongues&quot;&gt;&lt;/a&gt;26 - Tongues&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Gandalf’s writings have long been available for study, but no one has yet figured out what language they are written in. Recently, due to programming work by a hacker known only by the code name ROT13, it has been discovered that Gandalf used nothing but a simple letter substitution scheme, and further, that it is its own inverse|the same operation scrambles the message as unscrambles it.&lt;/p&gt;
-&lt;p&gt;This operation is performed by replacing vowels in the sequence &lt;code&gt;&amp;#39;a&amp;#39; &amp;#39;i&amp;#39; &amp;#39;y&amp;#39; &amp;#39;e&amp;#39; &amp;#39;o&amp;#39; &amp;#39;u&amp;#39;&lt;/code&gt; with the vowel three advanced, cyclicly, while preserving case (i.e., lower or upper).&lt;/p&gt;
-&lt;p&gt;Similarly, consonants are replaced from the sequence &lt;code&gt;&amp;#39;b&amp;#39; &amp;#39;k&amp;#39; &amp;#39;x&amp;#39; &amp;#39;z&amp;#39; &amp;#39;n&amp;#39; &amp;#39;h&amp;#39; &amp;#39;d&amp;#39; &amp;#39;c&amp;#39; &amp;#39;w&amp;#39; &amp;#39;g&amp;#39; &amp;#39;p&amp;#39; &amp;#39;v&amp;#39; &amp;#39;j&amp;#39; &amp;#39;q&amp;#39; &amp;#39;t&amp;#39; &amp;#39;s&amp;#39; &amp;#39;r&amp;#39; &amp;#39;l&amp;#39; &amp;#39;m&amp;#39; &amp;#39;f&amp;#39;&lt;/code&gt; by advancing ten letters.&lt;/p&gt;
-&lt;p&gt;So for instance the phrase &lt;code&gt;&amp;#39;One ring to rule them all.&amp;#39;&lt;/code&gt; translates to &lt;code&gt;&amp;#39;Ita dotf ni dyca nsaw ecc.&amp;#39;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;The fascinating thing about this transformation is that the resulting language yields pronounceable words. For this problem, you will write code to translate Gandalf’s manuscripts into plain text.&lt;/p&gt;
-&lt;p&gt;Your job is to write a function that decodes Gandalf’s writings.&lt;/p&gt;
-&lt;p&gt;Input&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;26-Tongues&quot;&gt;&lt;a href=&quot;#26-Tongues&quot; class=&quot;headerlink&quot; title=&quot;26 - Tongues&quot;&gt;&lt;/a&gt;26 - Tongues&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p
+      
     
     </summary>
     
@@ -199,17 +177,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;25-Range-Extraction&quot;&gt;&lt;a href=&quot;#25-Range-Extraction&quot; class=&quot;headerlink&quot; title=&quot;25 - Range Extraction&quot;&gt;&lt;/a&gt;25 - Range Extraction&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;A format for expressing an ordered list of integers is to use a comma separated list of either&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;individual integers&lt;/li&gt;
-&lt;li&gt;or a range of integers denoted by the starting integer separated from the end integer in the range by a dash, ‘-‘. The range includes all integers in the interval including both endpoints. It is not considered a range unless it spans at least 3 numbers. For example (“12, 13, 15-17”)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Complete the solution so that it takes a list of integers in increasing order and returns a correctly formatted string in the range format.&lt;/p&gt;
-&lt;p&gt;Example:&lt;/p&gt;
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  solution([-&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;, -&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, -&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;, -&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;14&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;17&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;18&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;19&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;# returns &quot;-6,-3-1,3-5,7-11,14,15,17-20&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;``&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;### Ruby&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#### Init&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;``&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;`ruby&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;  def solution(list)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;    #todo: complete solution&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;  end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;Sample-Testing&quot;&gt;&lt;a href=&quot;#Sample-Testing&quot; class=&quot;headerlink&quot; title=&quot;Sample Testing&quot;&gt;&lt;/a&gt;Sample Testing&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals(solution([-&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;, -&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, -&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;, -&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;14&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;17&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;18&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;19&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;]), &lt;span class=&quot;string&quot;&gt;&quot;-6,-3-1,3-5,7-11,14,15,17-20&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;25-Range-Extraction&quot;&gt;&lt;a href=&quot;#25-Range-Extraction&quot; class=&quot;headerlink&quot; title=&quot;25 - Range Extraction&quot;&gt;&lt;/a&gt;25 - Range Extraction&lt;/h1&gt;&lt;
+      
     
     </summary>
     
@@ -236,14 +207,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;24-Best-travel&quot;&gt;&lt;a href=&quot;#24-Best-travel&quot; class=&quot;headerlink&quot; title=&quot;24 - Best travel&quot;&gt;&lt;/a&gt;24 - Best travel&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;John and Mary want to travel between a few towns A, B, C … Mary has on a sheet of paper a list of distances between these towns. &lt;code&gt;ls = [50, 55, 57, 58, 60]&lt;/code&gt;. John is tired of driving and he says to Mary that he doesn’t want to drive more than &lt;code&gt;t = 174&lt;/code&gt; miles and he will visit only &lt;code&gt;3&lt;/code&gt; towns.&lt;/p&gt;
-&lt;p&gt;Which distances, hence which towns, they will choose so that the sum of the distances is the biggest possible to please Mary and John?&lt;/p&gt;
-&lt;p&gt;Example:&lt;/p&gt;
-&lt;p&gt;With list &lt;code&gt;ls&lt;/code&gt; and 3 towns to visit they can make a choice between: &lt;code&gt;[50,55,57],[50,55,58],[50,55,60],[50,57,58],[50,57,60],[50,58,60],[55,57,58],[55,57,60],[55,58,60],[57,58,60]&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The sums of distances are then: &lt;code&gt;162, 163, 165, 165, 167, 168, 170, 172, 173, 175&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The biggest possible sum taking a limit of 174 into account is then 173 and the distances of the 3 corresponding towns is &lt;code&gt;[55, 58, 60]&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The function chooseBestSum (or &lt;code&gt;choose_best_sum&lt;/code&gt; or … depending on the language) will take as parameters t (maximum sum of distances, integer &amp;gt;= 0), &lt;code&gt;k&lt;/code&gt; (number of towns to visit, k &amp;gt;= 1) and &lt;code&gt;ls&lt;/code&gt; (list of distances, all distances are positive or null integers and this list has at least one element). The function returns the “best” sum ie the biggest possible sum of k distances less than or equal to the given limit t, if that sum exists, or otherwise nil, null, None, Nothing, depending on the language. With C++, C, Rust, Swift, Go, Kotlin return &lt;code&gt;-1&lt;/code&gt;.&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;24-Best-travel&quot;&gt;&lt;a href=&quot;#24-Best-travel&quot; class=&quot;headerlink&quot; title=&quot;24 - Best travel&quot;&gt;&lt;/a&gt;24 - Best travel&lt;/h1&gt;&lt;p&gt;Don’t say so much,
+      
     
     </summary>
     
@@ -270,14 +237,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;23-Number-of-Proper-Fractions-with-Denominator-d&quot;&gt;&lt;a href=&quot;#23-Number-of-Proper-Fractions-with-Denominator-d&quot; class=&quot;headerlink&quot; title=&quot;23 - Number of Proper Fractions with Denominator d&quot;&gt;&lt;/a&gt;23 - Number of Proper Fractions with Denominator d&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;If n is the numerator and d the denominator of a fraction, that fraction is defined a (reduced) proper fraction if and only if GCD(n,d)==1.&lt;/p&gt;
-&lt;p&gt;For example &lt;code&gt;5/16&lt;/code&gt; is a proper fraction, while &lt;code&gt;6/16&lt;/code&gt; is not, as both 6 and 16 are divisible by 2, thus the fraction can be reduced to &lt;code&gt;3/8&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Now, if you consider a given number d, how many proper fractions can be built using d as a denominator?&lt;/p&gt;
-&lt;p&gt;For example, let’s assume that d is 15: you can build a total of 8 different proper fractions between 0 and 1 with it: 1/15, 2/15, 4/15, 7/15, 8/15, 11/15, 13/15 and 14/15.&lt;/p&gt;
-&lt;p&gt;You are to build a function that computes how many proper fractions you can build with a given denominator:&lt;/p&gt;
-&lt;p&gt;The order of the permutations doesn’t matter.&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;proper_fractions(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;proper_fractions(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;)==&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;proper_fractions(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;)==&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;proper_fractions(&lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;)==&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;proper_fractions(&lt;span class=&quot;number&quot;&gt;25&lt;/span&gt;)==&lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;23-Number-of-Proper-Fractions-with-Denominator-d&quot;&gt;&lt;a href=&quot;#23-Number-of-Proper-Fractions-with-Denominator-d&quot; class=&quot;headerlink&quot; tit
+      
     
     </summary>
     
@@ -304,13 +267,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;22-Permutations&quot;&gt;&lt;a href=&quot;#22-Permutations&quot; class=&quot;headerlink&quot; title=&quot;22 - Permutations&quot;&gt;&lt;/a&gt;22 - Permutations&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;In this kata you have to create all permutations of an input string and remove duplicates, if present. This means, you have to shuffle all letters from the input in all possible orders.&lt;/p&gt;
-&lt;p&gt;Examples:&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;permutations(&#39;a&#39;); # [&#39;a&#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;permutations(&#39;ab&#39;); # [&#39;ab&#39;, &#39;ba&#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;permutations(&#39;aabb&#39;); # [&#39;aabb&#39;, &#39;abab&#39;, &#39;abba&#39;, &#39;baab&#39;, &#39;baba&#39;, &#39;bbaa&#39;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;The order of the permutations doesn’t matter.&lt;/p&gt;
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;permutations&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(string)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;#your code here&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;22-Permutations&quot;&gt;&lt;a href=&quot;#22-Permutations&quot; class=&quot;headerlink&quot; title=&quot;22 - Permutations&quot;&gt;&lt;/a&gt;22 - Permutations&lt;/h1&gt;&lt;p&gt;Don’t say so m
+      
     
     </summary>
     
@@ -337,16 +297,11 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;21-Snail&quot;&gt;&lt;a href=&quot;#21-Snail&quot; class=&quot;headerlink&quot; title=&quot;21 - Snail&quot;&gt;&lt;/a&gt;21 - Snail&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Snail Sort&lt;/p&gt;
-&lt;p&gt;Given an &lt;code&gt;n x n&lt;/code&gt; array, return the array elements arranged from outermost elements to the middle element, traveling clockwise.&lt;/p&gt;
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;array = [[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         [&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         [&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;snail(array) &lt;span class=&quot;comment&quot;&gt;#=&amp;gt; [1,2,3,6,9,8,7,4,5]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;For better understanding, please follow the numbers of the next array consecutively:&lt;/p&gt;
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;array = [[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         [&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         [&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;snail(array) &lt;span class=&quot;comment&quot;&gt;#=&amp;gt; [1,2,3,4,5,6,7,8,9]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;NOTE: The idea is not sort the elements from the lowest value to the highest; the idea is to traverse the 2-d array in a clockwise snailshell pattern.&lt;/p&gt;
-&lt;p&gt;NOTE 2: The 0x0 (empty matrix) is represented as en empty array inside an array &lt;code&gt;[[]]&lt;/code&gt;.&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;21-Snail&quot;&gt;&lt;a href=&quot;#21-Snail&quot; class=&quot;headerlink&quot; title=&quot;21 - Snail&quot;&gt;&lt;/a&gt;21 - Snail&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
+&lt;h2 id
+      
     
     </summary>
     
@@ -373,19 +328,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;20-Scramblies&quot;&gt;&lt;a href=&quot;#20-Scramblies&quot; class=&quot;headerlink&quot; title=&quot;20 - Scramblies&quot;&gt;&lt;/a&gt;20 - Scramblies&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Complete the function scramble(str1, str2) that returns true if a portion of str1 characters can be rearranged to match str2, otherwise returns false.&lt;/p&gt;
-&lt;p&gt;Notes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Only lower case letters will be used (a-z). No punctuation or digits will be included.&lt;/li&gt;
-&lt;li&gt;Performance needs to be considered&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input strings s1 and s2 are &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt; terminated.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Examples&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;scramble(&lt;span class=&quot;string&quot;&gt;&#39;rkqodlw&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;world&#39;&lt;/span&gt;) ==&amp;gt; True&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;scramble(&lt;span class=&quot;string&quot;&gt;&#39;cedewaraaossoqqyt&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;codewars&#39;&lt;/span&gt;) ==&amp;gt; True&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;scramble(&lt;span class=&quot;string&quot;&gt;&#39;katas&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;steak&#39;&lt;/span&gt;) ==&amp;gt; False&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;
+      
+      
+        &lt;h1 id=&quot;20-Scramblies&quot;&gt;&lt;a href=&quot;#20-Scramblies&quot; class=&quot;headerlink&quot; title=&quot;20 - Scramblies&quot;&gt;&lt;/a&gt;20 - Scramblies&lt;/h1&gt;&lt;p&gt;Don’t say so much, jus
+      
     
     </summary>
     
@@ -412,13 +358,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;19-RGB-To-Hex-Conversion&quot;&gt;&lt;a href=&quot;#19-RGB-To-Hex-Conversion&quot; class=&quot;headerlink&quot; title=&quot;19 - RGB To Hex Conversion&quot;&gt;&lt;/a&gt;19 - RGB To Hex Conversion&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.&lt;/p&gt;
-&lt;p&gt;Note: Your answer should always be 6 characters long, the shorthand with 3 will not work here.&lt;/p&gt;
-&lt;p&gt;The following are examples of expected output values:&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;rgb(255, 255, 255) # returns FFFFFF&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rgb(255, 255, 300) # returns FFFFFF&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rgb(0,0,0) # returns 000000&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rgb(148, 0, 211) # returns 9400D3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;rgb&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(r, g, b)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;# complete this function&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;19-RGB-To-Hex-Conversion&quot;&gt;&lt;a href=&quot;#19-RGB-To-Hex-Conversion&quot; class=&quot;headerlink&quot; title=&quot;19 - RGB To Hex Conversion&quot;&gt;&lt;/a&gt;19 - RGB To 
+      
     
     </summary>
     
@@ -445,13 +388,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;18-Maximum-subarray-sum&quot;&gt;&lt;a href=&quot;#18-Maximum-subarray-sum&quot; class=&quot;headerlink&quot; title=&quot;18 - Maximum subarray sum&quot;&gt;&lt;/a&gt;18 - Maximum subarray sum&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;The maximum sum subarray problem consists in finding the maximum sum of a contiguous subsequence in an array or list of integers:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;maxSequence [&lt;span class=&quot;number&quot;&gt;-2&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;-3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;-5&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// should be 6: [4, -1, 2, 1]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Easy case is when the list is made up of only positive numbers and the maximum sum is the sum of the whole array. If the list is made up of only negative numbers, return 0 instead.&lt;/p&gt;
-&lt;p&gt;Empty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.&lt;/p&gt;
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;max_sequence&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(arr)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;#your code here&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;18-Maximum-subarray-sum&quot;&gt;&lt;a href=&quot;#18-Maximum-subarray-sum&quot; class=&quot;headerlink&quot; title=&quot;18 - Maximum subarray sum&quot;&gt;&lt;/a&gt;18 - Maximum su
+      
     
     </summary>
     
@@ -478,15 +418,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;17-Valid-Parentheses&quot;&gt;&lt;a href=&quot;#17-Valid-Parentheses&quot; class=&quot;headerlink&quot; title=&quot;17 - Valid Parentheses&quot;&gt;&lt;/a&gt;17 - Valid Parentheses&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Write a function called that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it’s invalid.&lt;/p&gt;
-&lt;p&gt;Examples&lt;/p&gt;
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;()&quot;&lt;/span&gt;              =&amp;gt;  &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;)(()))&quot;&lt;/span&gt;          =&amp;gt;  &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;(&quot;&lt;/span&gt;               =&amp;gt;  &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;(())((()())())&quot;&lt;/span&gt;  =&amp;gt;  &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Constraints&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;0 &amp;lt;= input.length &amp;lt;= 100&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Along with opening (&lt;code&gt;(&lt;/code&gt;) and closing (&lt;code&gt;)&lt;/code&gt;) parenthesis, input may contain any valid ASCII characters. Furthermore, the input string may be empty and/or not contain any parentheses at all. Do not treat other forms of brackets as parentheses (e.g. &lt;code&gt;[]&lt;/code&gt;, &lt;code&gt;{}&lt;/code&gt;, &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt;).&lt;/p&gt;
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;
+      
+      
+        &lt;h1 id=&quot;17-Valid-Parentheses&quot;&gt;&lt;a href=&quot;#17-Valid-Parentheses&quot; class=&quot;headerlink&quot; title=&quot;17 - Valid Parentheses&quot;&gt;&lt;/a&gt;17 - Valid Parentheses&lt;/
+      
     
     </summary>
     
@@ -513,14 +448,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;16-Memoized-Fibonacci&quot;&gt;&lt;a href=&quot;#16-Memoized-Fibonacci&quot; class=&quot;headerlink&quot; title=&quot;16 - Memoized Fibonacci&quot;&gt;&lt;/a&gt;16 - Memoized Fibonacci&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Problem Context&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Fibonacci_number&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Fibonacci&lt;/a&gt; sequence is traditionally used to explain tree recursion.&lt;/p&gt;
-&lt;p&gt;This algorithm serves welll its educative purpose but it’s &lt;a href=&quot;https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2.2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tremendously inefficient&lt;/a&gt;, not only because of recursion, but because we invoke the fibonacci function twice, and the right branch of recursion (i.e. &lt;code&gt;fibonacci(n-2)&lt;/code&gt;) recalculates all the Fibonacci numbers already calculated by the left branch (i.e. &lt;code&gt;fibonacci(n-1)&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;This algorithm is so inefficient that the time to calculate any Fibonacci number over 50 is simply too much. You may go for a cup of coffee or go take a nap while you wait for the answer. But if you try it here in Code Wars you will most likely get a code timeout before any answers.&lt;/p&gt;
-&lt;p&gt;For this particular Kata we want to implement the memoization solution. This will be cool because it will let us keep using the tree recursion algorithm while still keeping it sufficiently optimized to get an answer very rapidly.&lt;/p&gt;
-&lt;p&gt;The trick of the memoized version is that we will keep a cache data structure (most likely an associative array) where we will store the Fibonacci numbers as we calculate them. When a Fibonacci number is calculated, we first look it up in the cache, if it’s not there, we calculate it and put it in the cache, otherwise we returned the cached number.&lt;/p&gt;
-&lt;p&gt;Refactor the function into a recursive Fibonacci function that using a memoized data structure avoids the deficiencies of tree recursion Can you make it so the memoization cache is private to this function?&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;16-Memoized-Fibonacci&quot;&gt;&lt;a href=&quot;#16-Memoized-Fibonacci&quot; class=&quot;headerlink&quot; title=&quot;16 - Memoized Fibonacci&quot;&gt;&lt;/a&gt;16 - Memoized Fibonac
+      
     
     </summary>
     
@@ -547,16 +478,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;15-Directions-Reduction&quot;&gt;&lt;a href=&quot;#15-Directions-Reduction&quot; class=&quot;headerlink&quot; title=&quot;15 - Directions Reduction&quot;&gt;&lt;/a&gt;15 - Directions Reduction&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Once upon a time, on a way through the old wild mountainous west,…&lt;br&gt;… a man was given directions to go from one point to another. The directions were “NORTH”, “SOUTH”, “WEST”, “EAST”. Clearly “NORTH” and “SOUTH” are opposite, “WEST” and “EAST” too.&lt;/p&gt;
-&lt;p&gt;Going to one direction and coming back the opposite direction right away is a needless effort. Since this is the wild west, with dreadfull weather and not much water, it’s important to save yourself some energy, otherwise you might die of thirst!&lt;/p&gt;
-&lt;p&gt;How I crossed a mountain desert the smart way.&lt;br&gt;The directions given to the man are, for example, the following (depending on the language):&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&quot;NORTH&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;SOUTH&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;SOUTH&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;EAST&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;WEST&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;NORTH&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;WEST&quot;&lt;/span&gt;].&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;You can immediatly see that going “NORTH” and immediately “SOUTH” is not reasonable, better stay to the same place! So the task is to give to the man a simplified version of the plan. A better plan in this case is simply:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&quot;WEST&quot;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Other examples:&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;15-Directions-Reduction&quot;&gt;&lt;a href=&quot;#15-Directions-Reduction&quot; class=&quot;headerlink&quot; title=&quot;15 - Directions Reduction&quot;&gt;&lt;/a&gt;15 - Directions
+      
     
     </summary>
     
@@ -583,14 +508,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;14-Simple-Pig-Latin&quot;&gt;&lt;a href=&quot;#14-Simple-Pig-Latin&quot; class=&quot;headerlink&quot; title=&quot;14 - Simple Pig Latin&quot;&gt;&lt;/a&gt;14 - Simple Pig Latin&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Move the first letter of each word to the end of it, then add “ay” to the end of the word. Leave punctuation marks untouched.&lt;/p&gt;
-&lt;p&gt;Examples&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pig_it(&#39;Pig latin is cool&#39;) # igPay atinlay siay oolcay&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pig_it(&#39;Hello world !&#39;)     # elloHay orldway !&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;pig_it&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;text&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;# ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;Sample-Testing&quot;&gt;&lt;a href=&quot;#Sample-Testing&quot; class=&quot;headerlink&quot; title=&quot;Sample Testing&quot;&gt;&lt;/a&gt;Sample Testing&lt;/h4&gt;
+      
+      
+        &lt;h1 id=&quot;14-Simple-Pig-Latin&quot;&gt;&lt;a href=&quot;#14-Simple-Pig-Latin&quot; class=&quot;headerlink&quot; title=&quot;14 - Simple Pig Latin&quot;&gt;&lt;/a&gt;14 - Simple Pig Latin&lt;/h1&gt;&lt;
+      
     
     </summary>
     
@@ -617,19 +538,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;13-int32-to-IPv4&quot;&gt;&lt;a href=&quot;#13-int32-to-IPv4&quot; class=&quot;headerlink&quot; title=&quot;13 - int32 to IPv4&quot;&gt;&lt;/a&gt;13 - int32 to IPv4&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Take the following IPv4 address: &lt;code&gt;128.32.10.1&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;This address has 4 octets where each octet is a single byte (or 8 bits).&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1st octet 128 has the binary representation: &lt;code&gt;10000000&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;2nd octet 32 has the binary representation: &lt;code&gt;00100000&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;3rd octet 10 has the binary representation: &lt;code&gt;00001010&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;4th octet 1 has the binary representation: &lt;code&gt;00000001&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So &lt;code&gt;128.32.10.1&lt;/code&gt; == &lt;code&gt;10000000.00100000.00001010.00000001&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Because the above IP address has 32 bits, we can represent it as the unsigned 32 bit number: &lt;code&gt;2149583361&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Complete the function that takes an unsigned 32 bit number and returns a string representation of its IPv4 address.&lt;/p&gt;
-&lt;p&gt;Examples&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;13-int32-to-IPv4&quot;&gt;&lt;a href=&quot;#13-int32-to-IPv4&quot; class=&quot;headerlink&quot; title=&quot;13 - int32 to IPv4&quot;&gt;&lt;/a&gt;13 - int32 to IPv4&lt;/h1&gt;&lt;p&gt;Don’t say 
+      
     
     </summary>
     
@@ -656,16 +568,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;12-Greed-is-Dice&quot;&gt;&lt;a href=&quot;#12-Greed-is-Dice&quot; class=&quot;headerlink&quot; title=&quot;12 - Greed is Dice&quot;&gt;&lt;/a&gt;12 - Greed is Dice&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Greed is a dice game played with five six-sided dice. Your mission, should you choose to accept it, is to score a throw according to these rules. You will always be given an array with five six-sided dice values.&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Three &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;&#39;s =&amp;gt; 1000 points&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;Three 6&#39;&lt;/span&gt;s =&amp;gt;  &lt;span class=&quot;number&quot;&gt;600&lt;/span&gt; points&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Three &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;&#39;s =&amp;gt;  500 points&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;Three 4&#39;&lt;/span&gt;s =&amp;gt;  &lt;span class=&quot;number&quot;&gt;400&lt;/span&gt; points&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Three &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;&#39;s =&amp;gt;  300 points&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;Three 2&#39;&lt;/span&gt;s =&amp;gt;  &lt;span class=&quot;number&quot;&gt;200&lt;/span&gt; points&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;One   &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;   =&amp;gt;  &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; points&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;One   &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;   =&amp;gt;   &lt;span class=&quot;number&quot;&gt;50&lt;/span&gt; point&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;A single die can only be counted once in each roll. For example, a given “5” can only count as part of a triplet (contributing to the 500 points) or as a single 50 points, but not both in the same roll.&lt;/p&gt;
-&lt;p&gt;Example scoring&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Throw       Score&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;---------   ------------------&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;number&quot;&gt;250&lt;/span&gt;:  &lt;span class=&quot;number&quot;&gt;50&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; the &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;) + &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; * &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; the &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;s)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;number&quot;&gt;1100&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; three &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;s) + &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; the other &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;   &lt;span class=&quot;number&quot;&gt;450&lt;/span&gt;:  &lt;span class=&quot;number&quot;&gt;400&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; three &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;s) + &lt;span class=&quot;number&quot;&gt;50&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; the &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;In some languages, it is possible to mutate the input to the function. This is something that you should never do. If you mutate the input, you will not be able to pass all the tests.&lt;/p&gt;
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;
+      
+      
+        &lt;h1 id=&quot;12-Greed-is-Dice&quot;&gt;&lt;a href=&quot;#12-Greed-is-Dice&quot; class=&quot;headerlink&quot; title=&quot;12 - Greed is Dice&quot;&gt;&lt;/a&gt;12 - Greed is Dice&lt;/h1&gt;&lt;p&gt;Don’t say 
+      
     
     </summary>
     
@@ -692,13 +598,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;11-Extract-the-domain-name-from-a-URL&quot;&gt;&lt;a href=&quot;#11-Extract-the-domain-name-from-a-URL&quot; class=&quot;headerlink&quot; title=&quot;11 - Extract the domain name from a URL&quot;&gt;&lt;/a&gt;11 - Extract the domain name from a URL&lt;/h1&gt;&lt;p&gt;Don’t say so much, just coding…&lt;/p&gt;
-&lt;h2 id=&quot;Instruction&quot;&gt;&lt;a href=&quot;#Instruction&quot; class=&quot;headerlink&quot; title=&quot;Instruction&quot;&gt;&lt;/a&gt;Instruction&lt;/h2&gt;&lt;p&gt;Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example:&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;domain_name(&lt;span class=&quot;string&quot;&gt;&quot;http://github.com/carbonfive/raygun&quot;&lt;/span&gt;) == &lt;span class=&quot;string&quot;&gt;&quot;github&quot;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;domain_name(&lt;span class=&quot;string&quot;&gt;&quot;http://www.zombie-bites.com&quot;&lt;/span&gt;) == &lt;span class=&quot;string&quot;&gt;&quot;zombie-bites&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;domain_name(&lt;span class=&quot;string&quot;&gt;&quot;https://www.cnet.com&quot;&lt;/span&gt;) == &lt;span class=&quot;string&quot;&gt;&quot;cnet&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;Ruby&quot;&gt;&lt;a href=&quot;#Ruby&quot; class=&quot;headerlink&quot; title=&quot;Ruby&quot;&gt;&lt;/a&gt;Ruby&lt;/h3&gt;&lt;h4 id=&quot;Init&quot;&gt;&lt;a href=&quot;#Init&quot; class=&quot;headerlink&quot; title=&quot;Init&quot;&gt;&lt;/a&gt;Init&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;domain_name&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(url)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;# return just the domain name&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;Sample-Testing&quot;&gt;&lt;a href=&quot;#Sample-Testing&quot; class=&quot;headerlink&quot; title=&quot;Sample Testing&quot;&gt;&lt;/a&gt;Sample Testing&lt;/h4&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals(domain_name(&lt;span class=&quot;string&quot;&gt;&quot;http://google.com&quot;&lt;/span&gt;), &lt;span class=&quot;string&quot;&gt;&quot;google&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals(domain_name(&lt;span class=&quot;string&quot;&gt;&quot;http://google.co.jp&quot;&lt;/span&gt;), &lt;span class=&quot;string&quot;&gt;&quot;google&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals(domain_name(&lt;span class=&quot;string&quot;&gt;&quot;www.xakep.ru&quot;&lt;/span&gt;), &lt;span class=&quot;string&quot;&gt;&quot;xakep&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Test.assert_equals(domain_name(&lt;span class=&quot;string&quot;&gt;&quot;https://youtube.com&quot;&lt;/span&gt;), &lt;span class=&quot;string&quot;&gt;&quot;youtube&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h1 id=&quot;11-Extract-the-domain-name-from-a-URL&quot;&gt;&lt;a href=&quot;#11-Extract-the-domain-name-from-a-URL&quot; class=&quot;headerlink&quot; title=&quot;11 - Extract the d
+      
     
     </summary>
     
